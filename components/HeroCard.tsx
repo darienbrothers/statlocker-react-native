@@ -11,6 +11,7 @@ interface HeroCardProps {
   position: string;
   gradYear: string;
   selectedTeam: 'High School' | 'Club';
+  onTeamSelect: (team: 'High School' | 'Club') => void;
   hsName: string;
   hsCityState: string;
   clubName: string;
@@ -20,12 +21,20 @@ interface HeroCardProps {
   gamesPlayed: number;
   wins: number;
   losses: number;
+  isVerified?: boolean;
 }
 
-const Stat: React.FC<{ value: string | number; label: string }> = ({ value, label }) => (
-  <View style={styles.statContainer}>
+const StatBox: React.FC<{ value: string; label: string }> = ({ value, label }) => (
+  <View style={styles.statBox}>
     <Text style={styles.statValue}>{value}</Text>
     <Text style={styles.statLabel}>{label}</Text>
+  </View>
+);
+
+const InfoBox: React.FC<{ value: string; label: string }> = ({ value, label }) => (
+  <View style={styles.infoBox}>
+    <Text style={styles.infoValue}>{value}</Text>
+    <Text style={styles.infoLabel}>{label}</Text>
   </View>
 );
 
@@ -37,6 +46,7 @@ const HeroCard: React.FC<HeroCardProps> = ({
   position,
   gradYear,
   selectedTeam,
+  onTeamSelect,
   hsName,
   hsCityState,
   clubName,
@@ -46,10 +56,9 @@ const HeroCard: React.FC<HeroCardProps> = ({
   gamesPlayed,
   wins,
   losses,
+  isVerified = true,
 }) => {
-  const teamInfo = selectedTeam === 'High School' 
-    ? { name: hsName, location: hsCityState } 
-    : { name: clubName, location: clubCityState };
+  const teamLocation = selectedTeam === 'High School' ? hsCityState.split(' | ')[0] + ', ' + hsCityState.split(' | ')[1] : clubCityState.split(' | ')[0] + ', ' + clubCityState.split(' | ')[1];
 
   const handleAvatarClick = async () => {
     const result = await ImagePicker.launchImageLibraryAsync({
@@ -66,8 +75,9 @@ const HeroCard: React.FC<HeroCardProps> = ({
 
   return (
     <View style={styles.card}>
-      <View style={styles.top}>
-        <View style={styles.left}>
+      <View style={styles.contentContainer}>
+        {/* Left Section - Avatar */}
+        <View style={styles.leftSection}>
           <TouchableOpacity
             onPress={handleAvatarClick}
             style={styles.avatarContainer}
@@ -76,34 +86,65 @@ const HeroCard: React.FC<HeroCardProps> = ({
             {avatarUrl ? (
               <Image source={{ uri: avatarUrl }} style={styles.avatar} />
             ) : (
-              <Icon name="user" size={32} color="#4F46E5" />
+              <View style={styles.avatarPlaceholder}>
+                <Icon name="user" size={56} color="#9CA3AF" />
+              </View>
             )}
           </TouchableOpacity>
-          
-          <View style={styles.info}>
-            <Text style={styles.name}>{userName}</Text>
-            <Text style={styles.details}>{sport} | Class of {gradYear} | {position}</Text>
-            <View style={styles.location}>
-              <Icon name="location" size={16} color="#6B7280" />
-              <View style={styles.locationText}>
-                <Text style={styles.teamName}>{teamInfo.name}</Text>
-                <Text style={styles.teamLocation}>{teamInfo.location}</Text>
-              </View>
-            </View>
-          </View>
         </View>
 
-        <TouchableOpacity style={styles.settingsButton}>
-          <Icon name="settings" size={20} color="#6B7280" />
-        </TouchableOpacity>
-      </View>
-      
-      <View style={styles.stats}>
-        <Stat value={wins} label="Wins" />
-        <Stat value={losses} label="Losses" />
-        <Stat value={`${savePercentage}%`} label="Save %" />
-        <Stat value={totalSaves} label="Saves" />
-        <Stat value={gamesPlayed} label="Games" />
+        {/* Right Section - Player Info */}
+        <View style={styles.rightSection}>
+          {/* Name with Verified Badge and Sport Tag */}
+          <View style={styles.nameRow}>
+            <View style={styles.nameContainer}>
+              <Text style={styles.name}>{userName}</Text>
+              {isVerified && (
+                <View style={styles.verifiedBadge}>
+                  <Icon name="check" size={12} color="#FFFFFF" />
+                </View>
+              )}
+            </View>
+            <View style={styles.sportTag}>
+              <Text style={styles.sportTagText}>{sport.toLowerCase()}</Text>
+            </View>
+          </View>
+
+          {/* Class & Position */}
+          <Text style={styles.classPosition}>Class of {gradYear} • {position}</Text>
+
+          {/* Key Stats - Record, Total Saves, Games Played */}
+          <View style={styles.statsRow}>
+            <StatBox value={`${wins}-${losses}`} label="RECORD" />
+            <StatBox value={totalSaves.toString()} label="SAVES" />
+            <StatBox value={gamesPlayed.toString()} label="GAMES" />
+          </View>
+
+          {/* Team & Location */}
+          <View style={styles.infoRow}>
+            <InfoBox value={selectedTeam === 'High School' ? hsName : clubName} label={selectedTeam === 'High School' ? 'HIGH SCHOOL' : 'CLUB'} />
+            <InfoBox value={teamLocation} label="HOMETOWN" />
+          </View>
+
+          {/* Team Toggle - Pill Segmented HS | Club */}
+          <View style={styles.pillToggleContainer}>
+            <TouchableOpacity
+              style={[styles.pillSegment, selectedTeam === 'High School' && styles.pillSegmentActive, { borderTopRightRadius: 0, borderBottomRightRadius: 0 }]}
+              onPress={() => onTeamSelect('High School')}
+              activeOpacity={0.85}
+            >
+              <Text style={[styles.pillText, selectedTeam === 'High School' && styles.pillTextActive]}>HS</Text>
+            </TouchableOpacity>
+            <View style={styles.pillDivider} />
+            <TouchableOpacity
+              style={[styles.pillSegment, selectedTeam === 'Club' && styles.pillSegmentActive, { borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }]}
+              onPress={() => onTeamSelect('Club')}
+              activeOpacity={0.85}
+            >
+              <Text style={[styles.pillText, selectedTeam === 'Club' && styles.pillTextActive]}>Club</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
       </View>
     </View>
   );
@@ -112,95 +153,159 @@ const HeroCard: React.FC<HeroCardProps> = ({
 const styles = StyleSheet.create({
   card: {
     backgroundColor: '#FFFFFF',
-    borderRadius: 16,
+    borderRadius: 12,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.05,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
     shadowRadius: 8,
-    elevation: 2,
+    elevation: 3,
+    marginVertical: 4,
+  },
+  contentContainer: {
+    flexDirection: 'row',
     padding: 16,
   },
-  top: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-  },
-  left: {
-    flexDirection: 'row',
-    flex: 1,
+  leftSection: {
+    marginRight: 16,
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    paddingTop: 4,
   },
   avatarContainer: {
-    width: 64,
-    height: 64,
-    backgroundColor: 'rgba(79, 70, 229, 0.1)',
-    borderRadius: 999,
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: 100,
+    height: 100,
+    borderRadius: 50,
     overflow: 'hidden',
+    backgroundColor: '#F3F4F6',
   },
   avatar: {
-    width: 64,
-    height: 64,
+    width: '100%',
+    height: '100%',
   },
-  info: {
-    marginLeft: 16,
+  avatarPlaceholder: {
+    width: '100%',
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#F3F4F6',
+  },
+  rightSection: {
+    flex: 1,
+  },
+  nameRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 6,
+  },
+  nameContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
     flex: 1,
   },
   name: {
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: '700',
-    color: '#1D2333',
+    color: '#111827',
+    marginRight: 6,
   },
-  details: {
-    fontSize: 12,
-    color: '#6B7280',
-    fontWeight: '600',
-    marginTop: 2,
-  },
-  location: {
-    flexDirection: 'row',
+  verifiedBadge: {
+    width: 18,
+    height: 18,
+    borderRadius: 9,
+    backgroundColor: '#4FC3F7',
     alignItems: 'center',
-    marginTop: 8,
+    justifyContent: 'center',
   },
-  locationText: {
-    marginLeft: 6,
+  sportTag: {
+    backgroundColor: '#4F46E5',
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 12,
   },
-  teamName: {
+  sportTagText: {
+    color: '#FFFFFF',
+    fontSize: 11,
     fontWeight: '600',
-    color: '#1D2333',
-    fontSize: 14,
+    textTransform: 'lowercase',
   },
-  teamLocation: {
-    fontSize: 12,
+  classPosition: {
+    fontSize: 13,
     color: '#6B7280',
-    marginTop: -2,
+    fontWeight: '400',
+    marginBottom: 16,
   },
-  settingsButton: {
-    padding: 4,
-  },
-  stats: {
-    marginTop: 16,
-    paddingTop: 16,
-    borderTopWidth: 1,
-    borderTopColor: '#E5E7EB',
+  statsRow: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'flex-start',
+    marginBottom: 16,
   },
-  statContainer: {
-    alignItems: 'center',
+  statBox: {
+    flex: 1,
+    marginRight: 16,
   },
   statValue: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: '700',
-    color: '#1D2333',
+    color: '#111827',
+    marginBottom: 4,
   },
   statLabel: {
-    fontSize: 12,
+    fontSize: 11,
+    color: '#9CA3AF',
+    fontWeight: '500',
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  infoRow: {
+    flexDirection: 'row',
+    marginBottom: 16,
+  },
+  infoBox: {
+    flex: 1,
+    marginRight: 16,
+  },
+  infoValue: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#111827',
+    marginBottom: 4,
+  },
+  infoLabel: {
+    fontSize: 11,
+    color: '#9CA3AF',
+    fontWeight: '500',
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  pillToggleContainer: {
+    flexDirection: 'row',
+    backgroundColor: '#F3F4F6',
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: '#E5E7EB',
+    overflow: 'hidden',
+    alignSelf: 'flex-start',
+  },
+  pillSegment: {
+    paddingVertical: 8,
+    paddingHorizontal: 18,
+    backgroundColor: 'transparent',
+  },
+  pillSegmentActive: {
+    backgroundColor: '#4F46E5',
+  },
+  pillText: {
+    fontSize: 13,
+    fontWeight: '700',
     color: '#6B7280',
-    marginTop: 2,
+  },
+  pillTextActive: {
+    color: '#FFFFFF',
+  },
+  pillDivider: {
+    width: 1,
+    backgroundColor: '#E5E7EB',
   },
 });
 
 export default HeroCard;
-

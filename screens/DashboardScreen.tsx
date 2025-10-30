@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import type { PerformanceMetric, Goal, Game, UpcomingGame, Streak } from '../types';
-import SegmentedControl from '../components/SegmentedControl';
 import MetricCard from '../components/MetricCard';
 import AiInsightCard from '../components/AiInsightCard';
 import RecentGamesList from '../components/RecentGamesList';
@@ -15,6 +14,8 @@ import AwardsAndAchievementsCard from '../components/AwardsAndAchievementsCard';
 import DrawerMenu from '../components/DrawerMenu';
 import Fab from '../components/Fab';
 import QuickActionsSheet from '../components/QuickActionsSheet';
+import GameLogModal from '../components/GameLogModal';
+import type { GameLogFormData } from '../types';
 
 // --- High School Data ---
 const hsStreak: Streak = {
@@ -132,6 +133,7 @@ const DashboardScreen: React.FC<DashboardScreenProps> = ({ onGameSelect, onMenuC
   const [avatarUrl, setAvatarUrl] = useState<string | null>('https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80');
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [isQuickActionsOpen, setQuickActionsOpen] = useState(false);
+  const [isGameLogOpen, setGameLogOpen] = useState(false);
   
   const handleAvatarChange = (newAvatar: string) => {
     setAvatarUrl(newAvatar);
@@ -155,23 +157,23 @@ const DashboardScreen: React.FC<DashboardScreenProps> = ({ onGameSelect, onMenuC
 
   const handleLogGame = () => {
     setQuickActionsOpen(false);
-    // TODO: Open GameLogModal when implemented
-    console.log('Log game clicked');
+    setGameLogOpen(true);
   };
 
-  const handleAskAiCoach = () => {
-    setQuickActionsOpen(false);
-    navigation.navigate('AI Coach' as never);
+  const handleGameSave = (data: Partial<GameLogFormData>) => {
+    console.log('Game data saved:', data);
+    // TODO: Save to storage/backend
+    setGameLogOpen(false);
   };
 
-  const userName = "Alex Rodriguez";
+  const userName = "Erica Brothers";
   const firstName = userName.split(' ')[0];
   
   const activeData = selectedTeam === 'High School' ? highSchoolData : clubData;
 
   return (
     <View style={styles.container}>
-      <TopNavBar userName={firstName} notificationCount={2} onMenuClick={handleMenuClick} />
+      <TopNavBar firstName={firstName} notificationCount={2} onMenuClick={handleMenuClick} />
       <DrawerMenu isOpen={isDrawerOpen} onClose={handleCloseDrawer} />
       <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
         <View style={styles.content}>
@@ -183,18 +185,13 @@ const DashboardScreen: React.FC<DashboardScreenProps> = ({ onGameSelect, onMenuC
             position="Goalie"
             gradYear="2026"
             selectedTeam={selectedTeam}
+            onTeamSelect={setSelectedTeam}
             hsName="Duxbury High School"
             hsCityState="Duxbury | MA"
             clubName="Mass Elite"
             clubCityState="Weymouth | MA"
+            isVerified={true}
             {...activeData.heroStats}
-          />
-        </View>
-
-        <View style={styles.content}>
-          <SegmentedControl 
-            options={['High School', 'Club'] as [string, string]}
-            onSelect={(option) => setSelectedTeam(option as 'High School' | 'Club')}
           />
         </View>
 
@@ -250,7 +247,11 @@ const DashboardScreen: React.FC<DashboardScreenProps> = ({ onGameSelect, onMenuC
         isOpen={isQuickActionsOpen}
         onClose={handleCloseQuickActions}
         onLogGameClick={handleLogGame}
-        onAskAiCoachClick={handleAskAiCoach}
+      />
+      <GameLogModal
+        isOpen={isGameLogOpen}
+        onClose={() => setGameLogOpen(false)}
+        onSave={handleGameSave}
       />
     </View>
   );

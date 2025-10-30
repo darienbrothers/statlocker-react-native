@@ -60,7 +60,7 @@ const SkillsScreen: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <TopNavBar userName="Alex" />
+      <TopNavBar firstName="Alex" />
       <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
         <View style={styles.content}>
           <Text style={styles.title}>Skills & Drills</Text>

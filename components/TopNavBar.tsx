@@ -1,33 +1,34 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from './Icon';
 import { Fonts } from '../utils/fonts';
 
 interface TopNavBarProps {
-  userName: string;
+  firstName: string;
   notificationCount?: number;
   onMenuClick?: () => void;
+  onCalendarClick?: () => void;
 }
 
-const TopNavBar: React.FC<TopNavBarProps> = ({ userName, notificationCount, onMenuClick }) => {
+const TopNavBar: React.FC<TopNavBarProps> = ({ firstName, notificationCount, onMenuClick, onCalendarClick }) => {
   const insets = useSafeAreaInsets();
   
   return (
     <View style={[styles.container, { paddingTop: insets.top + 24 }]}>
-      <View style={styles.left}>
-        <TouchableOpacity onPress={onMenuClick} style={styles.iconButton}>
-          <Icon name="menu" size={28} color="#6B7280" />
-        </TouchableOpacity>
-        <Image 
-          source={require('../assets/logo/statlockerLogo.png')} 
-          style={styles.logo}
-          resizeMode="contain"
-        />
-        <Text style={styles.title}>Welcome Back, {userName}!</Text>
+      <TouchableOpacity onPress={onMenuClick} style={styles.iconButton}>
+        <Icon name="menu" size={28} color="#6B7280" />
+      </TouchableOpacity>
+      
+      <View style={styles.center}>
+        <Text style={styles.title}>{firstName}'s Locker</Text>
       </View>
+      
       <View style={styles.right}>
-        <TouchableOpacity style={styles.iconButton}>
+        <TouchableOpacity onPress={onCalendarClick} style={styles.iconButton}>
+          <Icon name="calendar" size={28} color="#6B7280" />
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.iconButton, styles.bellButton]}>
           <Icon name="bell" size={28} color="#6B7280" />
           {notificationCount && notificationCount > 0 && (
             <View style={styles.badge}>
@@ -49,27 +50,26 @@ const styles = StyleSheet.create({
     paddingBottom: 16,
     backgroundColor: '#F7F7F9',
   },
-  left: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
+  center: {
     flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   right: {
-    position: 'relative',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
   },
   iconButton: {
     padding: 4,
   },
-  logo: {
-    height: 32,
-    width: 120,
+  bellButton: {
+    position: 'relative',
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: '700',
     color: '#1D2333',
-    flex: 1,
     fontFamily: Fonts.Outfit.semiBold,
   },
   badge: {
@@ -91,4 +91,3 @@ const styles = StyleSheet.create({
 });
 
 export default TopNavBar;
-

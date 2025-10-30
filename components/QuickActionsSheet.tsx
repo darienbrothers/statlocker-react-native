@@ -7,7 +7,6 @@ interface QuickActionsSheetProps {
   isOpen: boolean;
   onClose: () => void;
   onLogGameClick: () => void;
-  onAskAiCoachClick: () => void;
 }
 
 interface ActionItemProps {
@@ -82,13 +81,6 @@ const QuickActionsSheet: React.FC<QuickActionsSheetProps> = ({
               subtitle="Import from photo"
               onClick={() => {}}
               isFuture
-            />
-            <ActionItem
-              icon="sparkles"
-              iconBg="#06B6D4"
-              title="Ask AI Coach"
-              subtitle="Get advice from your stats"
-              onClick={onAskAiCoachClick}
             />
           </View>
         </View>

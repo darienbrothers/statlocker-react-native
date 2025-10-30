@@ -9,7 +9,7 @@ export type IconName =
   'arrowLeft' | 'close' | 'user' | 'location' | 'settings' | 
   'check' | 'video' | 'trophy' | 'recruiting' | 'messaging' | 
   'profile' | 'menu' | 'bell' | 'filter' | 'share' | 'chevronDown' |
-  'brain' | 'send' | 'play' | 'camera' | 'sparkles';
+  'brain' | 'send' | 'play' | 'camera' | 'sparkles' | 'chart' | 'weight' | 'medal' | 'calendar' | 'graduationCap';
 
 export type AccentColor = 'purple' | 'green' | 'blue' | 'orange' | 'cyan' | 'red';
 

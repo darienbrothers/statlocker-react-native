@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Icon } from '../components/Icon';
+import { Ionicons } from '@expo/vector-icons';
 import DashboardScreen from '../screens/DashboardScreen';
 import StatsScreen from '../screens/StatsScreen';
 import AiCoachScreen from '../screens/AiCoachScreen';
@@ -35,8 +35,13 @@ export default function AppNavigator() {
         <Tab.Screen
           name="Dashboard"
           options={{
-            tabBarIcon: ({ color, size }) => (
-              <Icon name="dashboard" size={size} color={color} />
+            tabBarLabel: 'Locker',
+            tabBarIcon: ({ color, size, focused }) => (
+              <Ionicons 
+                name={focused ? "home" : "home-outline"} 
+                size={size} 
+                color={color} 
+              />
             ),
           }}
         >
@@ -47,7 +52,11 @@ export default function AppNavigator() {
           component={StatsScreen}
           options={{
             tabBarIcon: ({ color, size }) => (
-              <Icon name="stats" size={size} color={color} />
+              <Ionicons 
+                name="bar-chart-outline" 
+                size={size} 
+                color={color} 
+              />
             ),
           }}
         />
@@ -56,7 +65,11 @@ export default function AppNavigator() {
           component={AiCoachScreen}
           options={{
             tabBarIcon: ({ color, size }) => (
-              <Icon name="ai" size={size} color={color} />
+              <Ionicons 
+                name="sparkles-outline" 
+                size={size} 
+                color={color} 
+              />
             ),
             tabBarLabel: 'AI',
           }}
@@ -66,7 +79,11 @@ export default function AppNavigator() {
           component={SkillsScreen}
           options={{
             tabBarIcon: ({ color, size }) => (
-              <Icon name="skills" size={size} color={color} />
+              <Ionicons 
+                name="barbell-outline" 
+                size={size} 
+                color={color} 
+              />
             ),
           }}
         />
@@ -74,8 +91,12 @@ export default function AppNavigator() {
           name="Goals"
           component={GoalsScreen}
           options={{
-            tabBarIcon: ({ color, size }) => (
-              <Icon name="goals" size={size} color={color} />
+            tabBarIcon: ({ color, size, focused }) => (
+              <Ionicons 
+                name={focused ? "trophy" : "trophy-outline"} 
+                size={size} 
+                color={color} 
+              />
             ),
           }}
         />
@@ -83,4 +104,3 @@ export default function AppNavigator() {
     </NavigationContainer>
   );
 }
-

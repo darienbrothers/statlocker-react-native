@@ -17,6 +17,12 @@ export const Icon: React.FC<IconProps> = ({ name, className, size = 24, color = 
         return <Path d="M4 13h6v6H4v-6zm0-10h6v6H4V3zm8 10h6v6h-6v-6zm0-10h6v6h-6V3z" fill={color} />;
       case 'stats':
         return <Path d="M4 4h16v16H4V4zm2 14h12V6H6v12zM8 10h2v6H8v-6zm4 0h2v6h-2v-6zm4-3h2v9h-2v-9z" fill={color} />;
+      case 'chart':
+        return <Path d="M5 9.2h3V19H5V9.2zM10.6 5h2.8v14h-2.8V5zm5.6 8H19v6h-2.8v-6z" fill={color} />;
+      case 'weight':
+        return <Path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l2.18-7.65-2.23-.73V4c0-1.1-.9-2-2-2h-5c-1.1 0-2 .9-2 2v6.62l-2.23.73L3.95 19zM6 6h5v6.97L6 18.97V6z" fill={color} />;
+      case 'medal':
+        return <Path d="M7 4v6l5 2.5L17 10V4H7zm-2 0H2v8c0 4.42 3.58 8 8 8s8-3.58 8-8V4h-3v6l-6 3-6-3V4z" fill={color} />;
       case 'ai':
         return <Path d="M12 3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18c1.1 0 2-.9 2-2v-2h-4v2c0 1.1.9 2 2 2zM5 13c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2s2-.9 2-2v-2c0-1.1-.9-2-2-2zm14 0c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2s2-.9 2-2v-2c0-1.1-.9-2-2-2z" fill={color} />;
       case 'skills':
@@ -87,6 +93,10 @@ export const Icon: React.FC<IconProps> = ({ name, className, size = 24, color = 
         return <Path d="M9.4 16.6L12 19.2 14.6 16.6 17.2 19.2 19.8 16.6 22.4 19.2 21 20.6 18.4 18 15.8 20.6 13.2 18 10.6 20.6 8 18 9.4 16.6zM20 5h-3.17L15 3H9L7.17 5H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-8 11c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" fill={color} />;
       case 'sparkles':
         return <Path d="M12 2.5l1.55 3.15 3.45.5 -2.5 2.45 .6 3.4 -3.1 -1.65 -3.1 1.65 .6 -3.4 -2.5 -2.45 3.45 -.5L12 2.5zM19 12l-1.55 -3.15 -3.45 -.5 2.5 2.45 -.6 3.4 3.1 -1.65 3.1 1.65 -.6 -3.4 2.5 -2.45 -3.45 .5L19 12zM6 21l1.55 -3.15 3.45 -.5 -2.5 2.45 .6 3.4 -3.1 -1.65 -3.1 1.65 .6 -3.4 -2.5 -2.45 3.45 .5L6 21z" fill={color} />;
+      case 'calendar':
+        return <Path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" fill={color} />;
+      case 'graduationCap':
+        return <Path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" fill={color} />;
       default:
         return null;
     }

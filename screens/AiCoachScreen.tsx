@@ -98,7 +98,7 @@ const AiCoachScreen: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <TopNavBar userName="Alex" />
+      <TopNavBar firstName="Alex" />
       <View style={styles.header}>
         <Text style={styles.title}>AI Coach</Text>
         <Text style={styles.subtitle}>Your personal performance advisor.</Text>

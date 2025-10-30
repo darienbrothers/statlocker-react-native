@@ -14,7 +14,7 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  { name: 'Recruiting', icon: 'recruiting' },
+  { name: 'Recruiting', icon: 'graduationCap' },
   { name: 'Messaging', icon: 'messaging' },
   { name: 'Profile', icon: 'profile' },
   { name: 'Settings', icon: 'settings' },
@@ -29,7 +29,6 @@ const DrawerMenu: React.FC<DrawerMenuProps> = ({ isOpen, onClose }) => {
       onRequestClose={onClose}
     >
       <View style={styles.container}>
-        <TouchableOpacity style={styles.overlay} activeOpacity={1} onPress={onClose} />
         <View style={styles.drawer}>
           <View style={styles.header}>
             <Text style={styles.title}>StatLocker</Text>
@@ -46,6 +45,7 @@ const DrawerMenu: React.FC<DrawerMenuProps> = ({ isOpen, onClose }) => {
             ))}
           </View>
         </View>
+        <TouchableOpacity style={styles.overlay} activeOpacity={1} onPress={onClose} />
       </View>
     </Modal>
   );
@@ -67,6 +67,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     padding: 24,
     paddingTop: 48,
+    shadowColor: '#000',
+    shadowOffset: { width: -2, height: 0 },
+    shadowOpacity: 0.25,
+    shadowRadius: 10,
+    elevation: 5,
   },
   header: {
     flexDirection: 'row',

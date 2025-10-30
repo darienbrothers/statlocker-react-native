@@ -41,15 +41,16 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   logo: {
-    width: 280,
-    height: 120,
+    width: 840,
+    height: 360,
     marginBottom: 40,
   },
   loadingContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    marginTop: 20,
+    position: 'absolute',
+    bottom: 100,
   },
   loadingText: {
     color: '#FFFFFF',
