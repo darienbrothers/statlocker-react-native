@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, TextInput, Modal } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, TextInput, Modal, StyleSheet } from 'react-native';
+import TopNavBar from '../components/TopNavBar';
 import ProgressRing from '../components/recruiting/ProgressRing';
 import RoadmapTimeline from '../components/recruiting/RoadmapTimeline';
 import MilestoneSheet from '../components/recruiting/MilestoneSheet';
@@ -38,34 +39,37 @@ export default function RecruitingScreen() {
   const nextAction = useMemo(() => getNextAction(milestones), [milestones]);
 
   return (
-    <View className="flex-1 bg-[#F7F7F9]">
-      {/* Sticky Overview Strip */}
-      <View className="px-4 pt-6 pb-3 bg-white border-b border-[#E5E7EB]">
-        <View className="flex-row items-center justify-between">
-          <View className="flex-row items-center gap-3">
+    <View style={styles.container}>
+      <TopNavBar firstName="Erica" />
+      <View style={styles.header}>
+        <Text style={styles.title}>Recruiting</Text>
+        <Text style={styles.subtitle}>Build your path to the next level.</Text>
+      </View>
+
+      <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+        {/* Progress Overview */}
+        <View style={styles.progressCard}>
+          <View style={styles.progressHeader}>
             <ProgressRing percent={progressPct} />
-            <View>
-              <Text className="font-outfit-bold text-xl text-ink-title">Recruiting</Text>
+            <View style={styles.progressInfo}>
+              <Text style={styles.progressPercent}>{progressPct}% Complete</Text>
               {nextAction && (
-                <Text className="text-ink-subtle text-xs mt-0.5">Next: {nextAction}</Text>
+                <Text style={styles.nextAction}>Next: {nextAction}</Text>
               )}
             </View>
           </View>
         </View>
-        <Text className="text-ink-subtle text-xs mt-1">Every task you complete moves a coach closer to knowing you.</Text>
-      </View>
 
-      <ScrollView contentContainerStyle={{ padding: 16 }}>
         {/* Roadmap */}
-        <View className="bg-white rounded-2xl p-4 mb-4">
-          <Text className="font-outfit-bold text-lg text-ink-title mb-3">Roadmap</Text>
+        <View style={styles.card}>
+          <Text style={styles.cardTitle}>Roadmap</Text>
           <RoadmapTimeline milestones={milestones} onPressMilestone={setSelectedMilestone} />
         </View>
 
         {/* Target Schools */}
-        <View className="mb-4">
-          <Text className="font-outfit-bold text-lg text-ink-title mb-2">Target Schools</Text>
-          <View className="flex-row gap-3">
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Target Schools</Text>
+          <View style={styles.schoolBoards}>
             <SchoolBoard
               title="Reach"
               board={'reach'}
@@ -91,10 +95,10 @@ export default function RecruitingScreen() {
         </View>
 
         {/* AI Outreach */}
-        <View className="bg-white rounded-2xl p-4 mb-24">
-          <Text className="font-outfit-bold text-lg text-ink-title mb-3">AI Outreach</Text>
-          <TouchableOpacity onPress={() => setComposerOpen(true)} className="bg-[#6366F1] rounded-xl p-3">
-            <Text className="text-white text-center font-intertight-semibold">Generate Email</Text>
+        <View style={styles.card}>
+          <Text style={styles.cardTitle}>AI Outreach</Text>
+          <TouchableOpacity onPress={() => setComposerOpen(true)} style={styles.outreachButton} activeOpacity={0.8}>
+            <Text style={styles.outreachButtonText}>Generate Email</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -102,10 +106,10 @@ export default function RecruitingScreen() {
       {/* Add School FAB */}
       <TouchableOpacity
         onPress={() => setAddOpen(true)}
-        className="absolute bottom-6 right-6 bg-brand-primary w-16 h-16 rounded-full items-center justify-center shadow-md"
+        style={styles.fab}
         activeOpacity={0.9}
       >
-        <Text className="text-white text-2xl">+</Text>
+        <Text style={styles.fabText}>+</Text>
       </TouchableOpacity>
 
       {/* Milestone Sheet */}
@@ -132,24 +136,24 @@ export default function RecruitingScreen() {
 
       {/* Add School Modal (simple) */}
       <Modal visible={addOpen} transparent animationType="fade" onRequestClose={() => setAddOpen(false)}>
-        <View className="flex-1 bg-black/40 items-center justify-center">
-          <View className="bg-white w-11/12 rounded-2xl p-4">
-            <Text className="font-outfit-bold text-lg text-ink-title mb-3">Add School</Text>
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalContent}>
+            <Text style={styles.modalTitle}>Add School</Text>
             <TextInput
               value={newSchoolName}
               onChangeText={setNewSchoolName}
               placeholder="School name"
-              className="border border-[#E5E7EB] rounded-xl p-3 mb-3"
+              style={styles.input}
             />
             <TextInput
               value={newDivision}
               onChangeText={(t) => setNewDivision((t as any) || 'DIII')}
               placeholder="Division (DI/DII/DIII/Club)"
-              className="border border-[#E5E7EB] rounded-xl p-3 mb-4"
+              style={styles.input}
             />
-            <View className="flex-row gap-2">
-              <TouchableOpacity onPress={() => setAddOpen(false)} className="flex-1 bg-[#F3F4F6] rounded-xl p-3">
-                <Text className="text-center text-ink-title">Cancel</Text>
+            <View style={styles.modalActions}>
+              <TouchableOpacity onPress={() => setAddOpen(false)} style={styles.cancelButton}>
+                <Text style={styles.cancelButtonText}>Cancel</Text>
               </TouchableOpacity>
               <TouchableOpacity
                 onPress={() => {
@@ -159,9 +163,9 @@ export default function RecruitingScreen() {
                   setNewDivision('DIII');
                   setAddOpen(false);
                 }}
-                className="flex-1 bg-[#10B981] rounded-xl p-3"
+                style={styles.addButton}
               >
-                <Text className="text-center text-white">Add</Text>
+                <Text style={styles.addButtonText}>Add</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -170,5 +174,175 @@ export default function RecruitingScreen() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F7F7F9',
+  },
+  header: {
+    padding: 16,
+    paddingBottom: 8,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: '700',
+    color: '#1D2333',
+    fontFamily: 'Outfit-SemiBold',
+  },
+  subtitle: {
+    fontSize: 14,
+    color: '#6B7280',
+    marginTop: 4,
+    fontFamily: 'InterTight-Regular',
+  },
+  scrollContent: {
+    padding: 16,
+  },
+  progressCard: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.05,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  progressHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+  progressInfo: {
+    flex: 1,
+  },
+  progressPercent: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: '#1D2333',
+  },
+  nextAction: {
+    fontSize: 12,
+    color: '#6B7280',
+    marginTop: 4,
+  },
+  card: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.05,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  cardTitle: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: '#1D2333',
+    marginBottom: 12,
+  },
+  section: {
+    marginBottom: 16,
+  },
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: '#1D2333',
+    marginBottom: 12,
+  },
+  schoolBoards: {
+    flexDirection: 'row',
+    gap: 12,
+  },
+  outreachButton: {
+    backgroundColor: '#4F46E5',
+    borderRadius: 12,
+    padding: 12,
+    alignItems: 'center',
+  },
+  outreachButtonText: {
+    color: '#FFFFFF',
+    fontWeight: '600',
+    fontSize: 16,
+  },
+  fab: {
+    position: 'absolute',
+    bottom: 24,
+    right: 24,
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    backgroundColor: '#4F46E5',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 8,
+  },
+  fabText: {
+    color: '#FFFFFF',
+    fontSize: 24,
+    fontWeight: '700',
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  modalContent: {
+    backgroundColor: '#FFFFFF',
+    width: '90%',
+    borderRadius: 16,
+    padding: 16,
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: '#1D2333',
+    marginBottom: 12,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#E5E7EB',
+    borderRadius: 12,
+    padding: 12,
+    marginBottom: 12,
+    fontSize: 16,
+    color: '#1D2333',
+  },
+  modalActions: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  cancelButton: {
+    flex: 1,
+    backgroundColor: '#F3F4F6',
+    borderRadius: 12,
+    padding: 12,
+    alignItems: 'center',
+  },
+  cancelButtonText: {
+    color: '#1D2333',
+    fontWeight: '600',
+  },
+  addButton: {
+    flex: 1,
+    backgroundColor: '#10B981',
+    borderRadius: 12,
+    padding: 12,
+    alignItems: 'center',
+  },
+  addButtonText: {
+    color: '#FFFFFF',
+    fontWeight: '600',
+  },
+});
 
 

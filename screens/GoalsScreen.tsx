@@ -137,16 +137,15 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   addButton: {
-    alignSelf: 'flex-start',
     paddingHorizontal: 12,
-    paddingVertical: 8,
-    backgroundColor: '#6366F1',
-    borderRadius: 12,
-    marginBottom: 12,
+    paddingVertical: 6,
+    backgroundColor: '#4F46E5',
+    borderRadius: 999,
   },
   addButtonText: {
     color: '#FFFFFF',
-    fontWeight: '700',
+    fontWeight: '600',
+    fontSize: 12,
   },
   rowActions: {
     flexDirection: 'row',

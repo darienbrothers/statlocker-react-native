@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, ScrollView, Text, TouchableOpacity, Alert, Share } from 'react-native';
-import SettingsHeader from '../components/settings/SettingsHeader';
+import { View, ScrollView, Text, TouchableOpacity, Alert, Share, StyleSheet } from 'react-native';
+import TopNavBar from '../components/TopNavBar';
 import SettingsSection from '../components/settings/SettingsSection';
 import ToggleRow from '../components/settings/ToggleRow';
 import PlanCard from '../components/settings/PlanCard';
@@ -24,9 +24,13 @@ export default function SettingsScreen() {
   const onSignOut = () => Alert.alert('Signed out', 'Signed out successfully.');
 
   return (
-    <View className="flex-1 bg-slate-50 dark:bg-slate-900">
-      <SettingsHeader />
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
+    <View style={styles.container}>
+      <TopNavBar firstName="Erica" />
+      <View style={styles.header}>
+        <Text style={styles.title}>Settings</Text>
+        <Text style={styles.subtitle}>Manage your account and preferences.</Text>
+      </View>
+      <ScrollView contentInsetAdjustmentBehavior="automatic" showsVerticalScrollIndicator={false}>
         {/* Account */}
         <SettingsSection title="Account">
           <View>
@@ -135,5 +139,28 @@ export default function SettingsScreen() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F7F7F9',
+  },
+  header: {
+    padding: 16,
+    paddingBottom: 8,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: '700',
+    color: '#1D2333',
+    fontFamily: 'Outfit-SemiBold',
+  },
+  subtitle: {
+    fontSize: 14,
+    color: '#6B7280',
+    marginTop: 4,
+    fontFamily: 'InterTight-Regular',
+  },
+});
 
 

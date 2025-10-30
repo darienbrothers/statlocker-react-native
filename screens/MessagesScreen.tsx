@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { View, Text, TouchableOpacity, FlatList } from 'react-native';
+import { View, Text, TouchableOpacity, FlatList, StyleSheet } from 'react-native';
 import { mockMessagesStore } from '../store/messages/mockStore';
 import { ThreadSummary } from '../types/messages';
+import TopNavBar from '../components/TopNavBar';
 
 type Section = { title: string; data: ThreadSummary[] };
 
@@ -34,19 +35,20 @@ export default function MessagesScreen({ navigation }: any) {
 
   const renderRow = (item: ThreadSummary) => (
     <TouchableOpacity
-      className="px-4 py-3 border-b border-slate-200 bg-white"
+      style={styles.threadItem}
       onPress={() => navigation.navigate('ThreadScreen', { threadId: item.id, isChannel: item.isChannel })}
+      activeOpacity={0.7}
     >
-      <View className="flex-row items-center justify-between">
-        <View>
-          <Text className="text-ink-title font-outfit-bold text-base">{item.name}</Text>
+      <View style={styles.threadContent}>
+        <View style={styles.threadInfo}>
+          <Text style={styles.threadName}>{item.name}</Text>
           {item.type === 'announcements' ? (
-            <Text className="text-ink-subtle text-xs">Coach announcements</Text>
+            <Text style={styles.threadMeta}>Coach announcements</Text>
           ) : null}
         </View>
         {item.unreadCount ? (
-          <View className="min-w-[24px] px-2 py-1 rounded-full bg-brand-primary">
-            <Text className="text-white text-xs font-semibold">{item.unreadCount}</Text>
+          <View style={styles.unreadBadge}>
+            <Text style={styles.unreadText}>{item.unreadCount}</Text>
           </View>
         ) : null}
       </View>
@@ -54,21 +56,98 @@ export default function MessagesScreen({ navigation }: any) {
   );
 
   return (
-    <View className="flex-1 bg-[#F7F7F9]">
+    <View style={styles.container}>
+      <TopNavBar firstName="Erica" />
+      <View style={styles.header}>
+        <Text style={styles.title}>Messages</Text>
+        <Text style={styles.subtitle}>Stay connected with your team and coaches.</Text>
+      </View>
       <FlatList
         data={sections}
         keyExtractor={(s) => s.title}
         renderItem={({ item: section }) => (
           <View>
-            <Text className="px-4 py-2 text-ink-subtle text-xs uppercase">{section.title}</Text>
+            <Text style={styles.sectionHeader}>{section.title}</Text>
             {section.data.map((row) => (
               <View key={row.id}>{renderRow(row)}</View>
             ))}
           </View>
         )}
+        showsVerticalScrollIndicator={false}
       />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F7F7F9',
+  },
+  header: {
+    padding: 16,
+    paddingBottom: 8,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: '700',
+    color: '#1D2333',
+    fontFamily: 'Outfit-SemiBold',
+  },
+  subtitle: {
+    fontSize: 14,
+    color: '#6B7280',
+    marginTop: 4,
+    fontFamily: 'InterTight-Regular',
+  },
+  sectionHeader: {
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    fontSize: 12,
+    fontWeight: '600',
+    color: '#6B7280',
+    textTransform: 'uppercase',
+    backgroundColor: '#F7F7F9',
+  },
+  threadItem: {
+    backgroundColor: '#FFFFFF',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#E5E7EB',
+  },
+  threadContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  threadInfo: {
+    flex: 1,
+  },
+  threadName: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#1D2333',
+  },
+  threadMeta: {
+    fontSize: 12,
+    color: '#6B7280',
+    marginTop: 2,
+  },
+  unreadBadge: {
+    minWidth: 24,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 12,
+    backgroundColor: '#4F46E5',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  unreadText: {
+    color: '#FFFFFF',
+    fontSize: 12,
+    fontWeight: '600',
+  },
+});
 
 

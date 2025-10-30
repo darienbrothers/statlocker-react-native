@@ -124,7 +124,7 @@ const AiCoachScreen: React.FC = () => {
       <View style={styles.header}>
         <View style={styles.headerRow}>
           <View style={[styles.avatar, { borderColor: tone === 'hype' ? '#8B5CF6' : tone === 'analyst' ? '#3B82F6' : tone === 'mentor' ? '#F59E0B' : '#1E3A8A' }]} />
-          <View>
+          <View style={styles.headerTextContainer}>
             <Text style={styles.title}>AI Coach</Text>
             <Text style={styles.subtitle}>Your personal performance advisor.</Text>
           </View>
@@ -134,30 +134,36 @@ const AiCoachScreen: React.FC = () => {
         </View>
         <ToneSelector tone={tone} onChangeTone={handleChangeTone} />
       </View>
-      <View style={styles.content}>
-        <SectionHeader title="Insights" />
+      
+      <View style={styles.insightsSection}>
+        <View style={styles.content}>
+          <SectionHeader title="Insights" />
+        </View>
         <InsightCarousel insights={insights} />
       </View>
-      <View style={styles.content}>
-        <SectionHeader title="Conversation" />
+
+      <View style={styles.chatContainer}>
+        <View style={styles.content}>
+          <SectionHeader title="Conversation" />
+        </View>
         <FlatList
-        ref={flatListRef}
-        data={messages}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <ChatMessageBubble message={item} />}
-        style={styles.messages}
-        contentContainerStyle={styles.messagesContent}
-        showsVerticalScrollIndicator={false}
+          ref={flatListRef}
+          data={messages}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => <ChatMessageBubble message={item} />}
+          contentContainerStyle={styles.messagesContent}
+          showsVerticalScrollIndicator={false}
+          ListFooterComponent={
+            isLoading ? (
+              <View style={styles.loading}>
+                <View style={styles.loadingBubble}>
+                  <ActivityIndicator size="small" color="#6B7280" />
+                </View>
+              </View>
+            ) : null
+          }
         />
       </View>
-
-      {isLoading && (
-        <View style={styles.loading}>
-          <View style={styles.loadingBubble}>
-            <ActivityIndicator size="small" color="#6B7280" />
-          </View>
-        </View>
-      )}
 
       <View style={styles.footer}>
         <ChatInput
@@ -198,13 +204,16 @@ const styles = StyleSheet.create({
   header: {
     padding: 16,
     paddingBottom: 8,
+    backgroundColor: '#F7F7F9',
   },
   headerRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
     gap: 12,
     marginBottom: 8,
+  },
+  headerTextContainer: {
+    flex: 1,
   },
   avatar: {
     width: 36,
@@ -236,18 +245,23 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#1D2333',
   },
-  messages: {
+  insightsSection: {
+    backgroundColor: '#F7F7F9',
+    paddingBottom: 8,
+  },
+  chatContainer: {
     flex: 1,
-    paddingHorizontal: 16,
+    backgroundColor: '#F7F7F9',
   },
   messagesContent: {
-    paddingTop: 16,
+    paddingHorizontal: 16,
+    paddingTop: 8,
     paddingBottom: 16,
   },
   loading: {
     paddingHorizontal: 16,
     alignItems: 'flex-start',
-    marginBottom: 8,
+    marginTop: 8,
   },
   loadingBubble: {
     backgroundColor: '#FFFFFF',
