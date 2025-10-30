@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import * as Font from 'expo-font';
 import AppNavigator from './navigation/AppNavigator';
 import SplashScreen from './components/SplashScreen';
+import { GoalsProvider } from './contexts/goals';
 
 export default function App() {
   const [fontsLoaded, setFontsLoaded] = useState(false);
@@ -44,7 +45,9 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <AppNavigator />
+      <GoalsProvider>
+        <AppNavigator />
+      </GoalsProvider>
       <StatusBar style="dark" />
     </SafeAreaProvider>
   );

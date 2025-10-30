@@ -1,37 +1,51 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import type { Drill } from '../../types';
+import type { Drill, DrillStatus } from '../../types';
 import { Icon } from '../Icon';
 
 interface DrillListItemProps {
   drill: Drill;
-  onToggleComplete: (id: string) => void;
   onStartDrill: (drill: Drill) => void;
+  status?: DrillStatus;
+  repsLogged?: number;
+  onToggleComplete?: (id: string) => void; // Optional for backward compat
 }
 
-const DrillListItem: React.FC<DrillListItemProps> = ({ drill, onToggleComplete, onStartDrill }) => {
-  return (
-    <View style={[styles.card, { opacity: drill.isCompleted ? 0.6 : 1 }]}>
-      <TouchableOpacity
-        onPress={() => onToggleComplete(drill.id)}
-        style={styles.checkbox}
-        activeOpacity={0.7}
-      >
-        {drill.isCompleted && <Icon name="check" size={16} color="#4F46E5" />}
-      </TouchableOpacity>
+const DrillListItem: React.FC<DrillListItemProps> = ({ drill, onToggleComplete, onStartDrill, status, repsLogged }) => {
+  const isLocked = status === 'locked';
+  const isCompleted = status === 'completed';
+  const isInProgress = status === 'in_progress';
 
-      <View style={styles.content}>
-        <Text style={[styles.title, drill.isCompleted && styles.titleCompleted]}>{drill.title}</Text>
-        <Text style={styles.category}>{drill.category}</Text>
+  return (
+    <View style={[styles.card, { opacity: isLocked ? 0.5 : 1 }]}>
+      <View style={styles.checkbox}>
+        {isCompleted && <Icon name="check" size={16} color="#4F46E5" />}
+        {isLocked && <Icon name="lock" size={16} color="#9CA3AF" />}
+        {isInProgress && <View style={styles.progressDot} />}
       </View>
 
-      {drill.videoUrl && (
+      <TouchableOpacity 
+        style={styles.content} 
+        onPress={() => !isLocked && onStartDrill(drill)}
+        disabled={isLocked}
+        activeOpacity={0.7}
+      >
+        <View style={styles.titleRow}>
+          <Text style={[styles.title, isCompleted && styles.titleCompleted]}>{drill.title}</Text>
+          {isInProgress && repsLogged !== undefined && (
+            <Text style={styles.repsText}>{repsLogged} reps</Text>
+          )}
+        </View>
+        <Text style={styles.category}>{drill.category}</Text>
+      </TouchableOpacity>
+
+      {!isLocked && (
         <TouchableOpacity
-          onPress={() => onStartDrill(drill)}
+          onPress={() => !isLocked && onStartDrill(drill)}
           style={styles.videoButton}
           activeOpacity={0.7}
         >
-          <Icon name="video" size={20} color="#4F46E5" />
+          <Icon name="play" size={20} color="#4F46E5" />
         </TouchableOpacity>
       )}
     </View>
@@ -83,6 +97,23 @@ const styles = StyleSheet.create({
     padding: 8,
     backgroundColor: 'rgba(79, 70, 229, 0.1)',
     borderRadius: 20,
+  },
+  titleRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  repsText: {
+    fontSize: 12,
+    color: '#4F46E5',
+    fontWeight: '600',
+    marginLeft: 8,
+  },
+  progressDot: {
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    backgroundColor: '#4F46E5',
   },
 });
 

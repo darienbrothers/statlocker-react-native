@@ -1,12 +1,12 @@
 # Recruiting Tab
 
-# **🏫 Recruiting — “Your Future, Organized”**
+# **🏫 Recruiting — "Your Future, Organized"**
 
 ## **1\) Page Objectives**
 
 * Give athletes **clarity** (what to do next), **organization** (schools, tasks, docs), and **momentum** (AI help \+ progress).
 
-* Turn “overwhelming” into a **step-by-step roadmap** with visible wins.
+* Turn "overwhelming" into a **step-by-step roadmap** with visible wins.
 
 ---
 
@@ -28,11 +28,11 @@
 
 * **Next Action Chip** (primary CTA, dynamic):
 
-  * Examples: “Add your transcript”, “Pick 3 target schools”, “Generate first outreach email”
+  * Examples: "Add your transcript", "Pick 3 target schools", "Generate first outreach email"
 
 * **Status Pills**: Docs (✅/⚠️), Emails Sent (count), Campus Visits (count)
 
-Microcopy (under the strip): *“Every task you complete moves a coach closer to knowing you. Let’s stack wins.”*
+Microcopy (under the strip): *"Every task you complete moves a coach closer to knowing you. Let's stack wins."*
 
 ---
 
@@ -74,7 +74,7 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 **Functionality**
 
-* **Auto-complete** sub-steps when related data is uploaded or created (e.g., transcript file → “Academics: Transcript on file” ✔️).
+* **Auto-complete** sub-steps when related data is uploaded or created (e.g., transcript file → "Academics: Transcript on file" ✔️).
 
 * **Snooze** with reminder (1w/2w/custom).
 
@@ -82,7 +82,7 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 **States**
 
-* Empty: “Let’s pick 3 starter milestones.” → pre-select recommended based on grade.
+* Empty: "Let's pick 3 starter milestones." → pre-select recommended based on grade.
 
 * Partial: Show % and the **Next Action** in the sticky strip.
 
@@ -106,7 +106,7 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
   * Interest Status chip: Not Contacted / Emailed / In Conversation / Campus Visit / Offer
 
-  * “…” opens quick actions: View Profile, Move Column, Add Note, Set Reminder, Archive
+  * "…" opens quick actions: View Profile, Move Column, Add Note, Set Reminder, Archive
 
 **Tap → School Profile Sheet**
 
@@ -160,9 +160,9 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 * Empty:
 
-  * Illustration \+ CTA: “Start with 6—2 Reach, 2 Realistic, 2 Safe.”
+  * Illustration \+ CTA: "Start with 6—2 Reach, 2 Realistic, 2 Safe."
 
-  * Button: “Browse Schools” (opens search modal).
+  * Button: "Browse Schools" (opens search modal).
 
 ---
 
@@ -172,7 +172,7 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 **UI**
 
-* Gradient card: “Need help writing to a coach?”
+* Gradient card: "Need help writing to a coach?"
 
 * **Buttons**:
 
@@ -198,13 +198,13 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 * Templates versioned (A/B test friendly)
 
-* Auto-logs “Email Generated” with target school context
+* Auto-logs "Email Generated" with target school context
 
 * Premium gate for advanced variants (multi-coach, sport-specific nuance)
 
 **States**
 
-* First-time tip: “Use short paragraphs, 1–2 highlights, 1 clear ask.”
+* First-time tip: "Use short paragraphs, 1–2 highlights, 1 clear ask."
 
 ---
 
@@ -232,7 +232,7 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 **States**
 
-* Empty: “Add transcript to unlock your Academics milestone.”
+* Empty: "Add transcript to unlock your Academics milestone."
 
 ---
 
@@ -242,7 +242,7 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 **UI**
 
-* **Upcoming** list (chronological): “Follow up with Richmond (7d)”
+* **Upcoming** list (chronological): "Follow up with Richmond (7d)"
 
 * **Recent Activity**: Emails generated, schools added, milestones completed
 
@@ -276,9 +276,9 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 ### **Deep Links**
 
-* From Messaging → “View Stat Card” or “Player Card” can route into Recruiting to share with a coach thread
+* From Messaging → "View Stat Card" or "Player Card" can route into Recruiting to share with a coach thread
 
-* From Profile → “Share Player Card” routes to **AI Outreach** composer
+* From Profile → "Share Player Card" routes to **AI Outreach** composer
 
 ---
 
@@ -318,11 +318,11 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 * **No data at all** → Guided onboarding strip inside tab:
 
-  * “Pick 3 schools” → opens search; after 3 selected, shows Roadmap step.
+  * "Pick 3 schools" → opens search; after 3 selected, shows Roadmap step.
 
-* **Over 50 schools** → Show “Consolidate” nudge (try to keep boards focused).
+* **Over 50 schools** → Show "Consolidate" nudge (try to keep boards focused).
 
-* **Missing transcript** but “Email Coaches” milestone selected → inline tip: “Coaches often ask for academics—upload transcript to strengthen your email.”
+* **Missing transcript** but "Email Coaches" milestone selected → inline tip: "Coaches often ask for academics—upload transcript to strengthen your email."
 
 * **Premium Gating** (if applicable):
 
@@ -334,15 +334,15 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 ## **7\) Copy & Microcopy Library**
 
-* **Empty Schools:** “Choose 2–2–2: Two Reach, Two Realistic, Two Safe. That’s a winning start.”
+* **Empty Schools:** "Choose 2–2–2: Two Reach, Two Realistic, Two Safe. That's a winning start."
 
-* **Roadmap CTA:** “Clear steps beat wishful thinking. Let’s get one done now.”
+* **Roadmap CTA:** "Clear steps beat wishful thinking. Let's get one done now."
 
-* **AI Composer Tip:** “Keep it under 150 words. One stat, one story, one ask.”
+* **AI Composer Tip:** "Keep it under 150 words. One stat, one story, one ask."
 
-* **Docs Empty:** “Your transcript turns ‘maybe’ into ‘let’s talk.’”
+* **Docs Empty:** "Your transcript turns 'maybe' into 'let's talk.'"
 
-* **Reminders Title:** “Momentum Maker”
+* **Reminders Title:** "Momentum Maker"
 
 ---
 
@@ -376,7 +376,7 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 * Offline-first:
 
-  * Queue “email generated” logs; documents upload when online
+  * Queue "email generated" logs; documents upload when online
 
 * Haptics:
 
@@ -386,7 +386,7 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 ---
 
-## **10\) Analytics (events you’ll thank yourself for later)**
+## **10\) Analytics (events you'll thank yourself for later)**
 
 * `recruiting_opened`
 
@@ -408,25 +408,25 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 ## **11\) Accessibility**
 
-* All icons have labels (“Generate email”, “Move to Safe”)
+* All icons have labels ("Generate email", "Move to Safe")
 
 * Minimum 4.5:1 contrast on chips and text
 
-* Drag/drop has keyboard alternative: “Move to…” action sheet
+* Drag/drop has keyboard alternative: "Move to…" action sheet
 
 ---
 
 ## **12\) Coach Mode (optional, read-only for v1)**
 
-* Coach can see a player’s **boards** and **doc statuses** (not download, unless athlete shares).
+* Coach can see a player's **boards** and **doc statuses** (not download, unless athlete shares).
 
-* Coach can **leave a private note** on a school (visible to athlete as “Coach Note” with coach avatar).
+* Coach can **leave a private note** on a school (visible to athlete as "Coach Note" with coach avatar).
 
 * Quick suggestions:
 
-  * “Recommend follow-up to these 2 schools”
+  * "Recommend follow-up to these 2 schools"
 
-  * “Strong academic match—highlight GPA”
+  * "Strong academic match—highlight GPA"
 
 ---
 
@@ -446,11 +446,11 @@ Microcopy (under the strip): *“Every task you complete moves a coach closer to
 
 # Stats Tab
 
-# **📈 Stats Tab — “See Trends. Find Edges.”**
+# **📈 Stats Tab — "See Trends. Find Edges."**
 
 ## **🎯 Purpose**
 
-The **Stats tab** transforms raw data into visual stories — highlighting patterns, efficiency, and growth over time. It’s where athletes and coaches **see performance trends, compare, and act**.
+The **Stats tab** transforms raw data into visual stories — highlighting patterns, efficiency, and growth over time. It's where athletes and coaches **see performance trends, compare, and act**.
 
 ---
 
@@ -458,13 +458,13 @@ The **Stats tab** transforms raw data into visual stories — highlighting patte
 
 **Header Section**
 
-* **Title:** “My Stats”
+* **Title:** "My Stats"
 
-* **Subtitle:** contextual label → e.g., “Performance analysis for Duxbury High School”
+* **Subtitle:** contextual label → e.g., "Performance analysis for Duxbury High School"
 
 * **Filters:** Season | Team | Opponent | Home/Away | Timeframe
 
-* **FAB (floating right corner):** “Add Game” → opens Game Log modal
+* **FAB (floating right corner):** "Add Game" → opens Game Log modal
 
 **Core Sections**
 
@@ -488,19 +488,19 @@ The **Stats tab** transforms raw data into visual stories — highlighting patte
 
 * Gradient card (brand.primary → brand.accent)
 
-* Icon: “📈” or stat symbol (dynamic by trend)
+* Icon: "📈" or stat symbol (dynamic by trend)
 
 * Text example:
 
-   “Your save percentage improved by 9% over the last 30 days — strongest against top-ranked opponents.”
+   "Your save percentage improved by 9% over the last 30 days — strongest against top-ranked opponents."
 
-* CTA chip: “View Breakdown” → scrolls to chart section
+* CTA chip: "View Breakdown" → scrolls to chart section
 
 **States:**
 
-* Empty: “Play 3+ games to unlock insights.”
+* Empty: "Play 3+ games to unlock insights."
 
-* Premium: adds “AI Compare Mode” toggle (HS vs Club / Week vs Week).
+* Premium: adds "AI Compare Mode" toggle (HS vs Club / Week vs Week).
 
 ---
 
@@ -522,7 +522,7 @@ The **Stats tab** transforms raw data into visual stories — highlighting patte
 
 * Trendline rising from 75% → 85%.
 
-* AI note: “Consistency improving — 4/5 games above target.”
+* AI note: "Consistency improving — 4/5 games above target."
 
 ### **B) Bar Chart — Category Breakdown**
 
@@ -540,19 +540,19 @@ The **Stats tab** transforms raw data into visual stories — highlighting patte
 
 * Tap a bar → opens game summary modal.
 
-* Long press → “Compare to Team Avg.”
+* Long press → "Compare to Team Avg."
 
 ### **C) Pie/Donut Chart — Shot Distribution (future upgrade)**
 
 * Shows where shots/goals occurred if shot zones are tracked.
 
-* Example: “45% low-left, 35% mid-right.”
+* Example: "45% low-left, 35% mid-right."
 
 ---
 
 ## **🧩 3\. Position Metrics Grid (Dynamic by Position)**
 
-**Goalie (based on \[Lacrosse Stat Guide\]):**
+**Goalie (based on [Lacrosse Stat Guide]):**
 
 | Metric | Formula | Purpose |
 | ----- | ----- | ----- |
@@ -572,7 +572,7 @@ The **Stats tab** transforms raw data into visual stories — highlighting patte
 
   * Icon, title, stat, mini trend arrow
 
-  * Subtext: “+3% from last game”
+  * Subtext: "+3% from last game"
 
 **Interaction:**
 
@@ -586,7 +586,7 @@ The **Stats tab** transforms raw data into visual stories — highlighting patte
 
 ### **A) Team vs Player View**
 
-* Toggle (Top Right): “My Stats” | “Team Avg”
+* Toggle (Top Right): "My Stats" | "Team Avg"
 
 * Line overlay adds team trend for visual comparison.
 
@@ -594,7 +594,7 @@ The **Stats tab** transforms raw data into visual stories — highlighting patte
 
 * Switch below title:
 
-  * “High School | Club” toggle
+  * "High School | Club" toggle
 
   * Animates charts & cards based on source collection.
 
@@ -606,7 +606,7 @@ The **Stats tab** transforms raw data into visual stories — highlighting patte
 
   * Opponent, Date, W/L, Key Metrics
 
-  * AI Insight summary → “Your clears dropped to 75% due to higher pressure rides.”
+  * AI Insight summary → "Your clears dropped to 75% due to higher pressure rides."
 
 ---
 
@@ -614,31 +614,31 @@ The **Stats tab** transforms raw data into visual stories — highlighting patte
 
 After **3+ games**, auto-generates trend cards:
 
-* “Best Quarter”
+* "Best Quarter"
 
-* “Stat to Watch”
+* "Stat to Watch"
 
-* “Consistency Index”
+* "Consistency Index"
 
 **Examples:**
 
-* “3rd quarter \= strongest (Save % 89%)”
+* "3rd quarter = strongest (Save % 89%)"
 
-* “Clears efficiency dipped 12% in away games.”
+* "Clears efficiency dipped 12% in away games."
 
-* “Game-to-game variance decreased 40% this month.”
+* "Game-to-game variance decreased 40% this month."
 
 **UI:**
 
 * `AiCalloutCard` carousel (swipe horizontally)
 
-* Each card has icon, title, summary, and CTA → “See Drill Recommendation” (links to Skills tab).
+* Each card has icon, title, summary, and CTA → "See Drill Recommendation" (links to Skills tab).
 
 ---
 
 ## **📊 6\. Export & Share (Pro Feature)**
 
-**Button:** “Generate Season Report”  
+**Button:** "Generate Season Report"  
  **Modal:** selects:
 
 * Team (HS/Club)
@@ -653,7 +653,7 @@ After **3+ games**, auto-generates trend cards:
 
 * 3 key metrics (Save %, GAA, Clears %)
 
-* StatLocker branding \+ “Your Stats. Your Story. Your Future.” tagline
+* StatLocker branding \+ "Your Stats. Your Story. Your Future." tagline
 
 ---
 
@@ -669,7 +669,7 @@ After **3+ games**, auto-generates trend cards:
 
 ## **💡 Design Notes (NativeWind \+ Typography)**
 
-From your \[Typography spec\]:
+From your [Typography spec]:
 
 | Element | Font | Weight | Size | Color |
 | ----- | ----- | ----- | ----- | ----- |
@@ -711,7 +711,7 @@ From your \[Typography spec\]:
   `- { gameId, date, opponent, team, position }`  
   `- metrics: { saves, shotsFaced, goalsAllowed, clearsSuccess, turnovers }`  
   `- derived: { savePct, gaa, clearPct }`  
-  `- tags: [‘home’, ‘away’, ‘playoff’]`  
+  `- tags: ['home', 'away', 'playoff']`  
   `- createdAt, updatedAt`
 
 Auto-calculated fields match formulas in the Stat Guide.
@@ -730,19 +730,19 @@ Auto-calculated fields match formulas in the Stat Guide.
 
 ## **🏁 Example Copy Snippets**
 
-* **Empty State:** “Track at least 3 games to unlock your Stat Trends.”
+* **Empty State:** "Track at least 3 games to unlock your Stat Trends."
 
-* **AI Callout:** “Save % trending up — your last three games averaged 82%.”
+* **AI Callout:** "Save % trending up — your last three games averaged 82%."
 
-* **Export CTA:** “Your season. Visualized.”
+* **Export CTA:** "Your season. Visualized."
 
-* **Premium Lock (Pro plan):** “Unlock advanced charts and team comparisons.”
+* **Premium Lock (Pro plan):** "Unlock advanced charts and team comparisons."
 
 
 
 # Skills Tab
 
-# **⭐ Skills Tab — “Master Your Craft. Earn Every Tier.”**
+# **⭐ Skills Tab — "Master Your Craft. Earn Every Tier."**
 
 ## **🎯 Purpose**
 
@@ -767,12 +767,12 @@ The **Skills tab** helps athletes track their development through **tiered train
 
 ## **🏁 1\. Header Section**
 
-**Title:** “Skills & Drills”  
- **Subtitle:** “Sharpen your game — one rep, one tier, one season at a time.”
+**Title:** "Skills & Drills"  
+ **Subtitle:** "Sharpen your game — one rep, one tier, one season at a time."
 
 **Microcopy example:**
 
-“You’re in Silver Tier — your next milestone: complete 3 advanced reaction saves to reach Gold.”
+"You're in Silver Tier — your next milestone: complete 3 advanced reaction saves to reach Gold."
 
 **Visuals:**
 
@@ -788,20 +788,20 @@ The **Skills tab** helps athletes track their development through **tiered train
 
 **Purpose:** Personalized guidance using recent game stats and trends.
 
-**Section Title:** “AI Coach Recommends”  
+**Section Title:** "AI Coach Recommends"  
  **Card Example (dynamic):**
 
-* **Header:** “Reaction Time Focus”
+* **Header:** "Reaction Time Focus"
 
-* **Body:** “Your low-shot save % dropped 8% in the last 3 games. Run Bronze Drill 3: ‘Low Save Control’ twice this week.”
+* **Body:** "Your low-shot save % dropped 8% in the last 3 games. Run Bronze Drill 3: 'Low Save Control' twice this week."
 
-* **CTA:** “Add to Plan” (logs it in the weekly tracker).
+* **CTA:** "Add to Plan" (logs it in the weekly tracker).
 
 **Alternate cards:**
 
-* “Stick Control Boost” → recommends Off-Hand drills.
+* "Stick Control Boost" → recommends Off-Hand drills.
 
-* “Passing Precision” → recommends Bounce Pass Challenges for field players.
+* "Passing Precision" → recommends Bounce Pass Challenges for field players.
 
 **UI:**
 
@@ -827,15 +827,15 @@ The **Skills tab** helps athletes track their development through **tiered train
 
   * Animated progress bar
 
-  * “Time to Complete: 8–10 weeks”
+  * "Time to Complete: 8–10 weeks"
 
 **Microcopy:**
 
-“Stay consistent — Silver Tier builds speed, confidence, and off-hand precision.”
+"Stay consistent — Silver Tier builds speed, confidence, and off-hand precision."
 
-**AI Button:** “View AI Insights for this Tier” → modal with progress analysis:
+**AI Button:** "View AI Insights for this Tier" → modal with progress analysis:
 
-“You’re 2 drills away from unlocking Gold. Based on your logs, your weak hand reaction drills need more reps.”
+"You're 2 drills away from unlocking Gold. Based on your logs, your weak hand reaction drills need more reps."
 
 ---
 
@@ -852,7 +852,7 @@ The **Skills tab** helps athletes track their development through **tiered train
 **UI Cards (List or Grid View):**  
  Each **Drill Card** shows:
 
-* Drill name (“Quick Stick Passing”)
+* Drill name ("Quick Stick Passing")
 
 * Category tag (Passing / Reflex / Agility)
 
@@ -868,19 +868,19 @@ The **Skills tab** helps athletes track their development through **tiered train
 
 * Steps overview (1–3 bullet points from your PDF)
 
-* Goal reps (e.g., “50 reps @ full speed”)
+* Goal reps (e.g., "50 reps @ full speed")
 
 * Estimated time to complete
 
-* Motivational Quote: “Precision beats power when power isn’t precise.”
+* Motivational Quote: "Precision beats power when power isn't precise."
 
 * Buttons:
 
-  * ✅ “Log Reps” (records count or sets)
+  * ✅ "Log Reps" (records count or sets)
 
-  * 📹 “Start Live Tracking” (future AI vision mode)
+  * 📹 "Start Live Tracking" (future AI vision mode)
 
-  * 💬 “Ask Coach” (sends message to coach via Messaging tab)
+  * 💬 "Ask Coach" (sends message to coach via Messaging tab)
 
 **Progression Logic:**
 
@@ -892,7 +892,7 @@ The **Skills tab** helps athletes track their development through **tiered train
 
 ## **🏆 5\. Milestones & Coach Feedback**
 
-**Section Title:** “Milestones & Feedback”
+**Section Title:** "Milestones & Feedback"
 
 * Displays badges earned for each tier (Bronze Completion, 100 Wall Reps, Elite Reflex, etc.)
 
@@ -904,7 +904,7 @@ The **Skills tab** helps athletes track their development through **tiered train
 
 * AI quote for motivation:
 
-   “Elite players aren’t made in games — they’re made in the wall ball sessions no one sees.”
+   "Elite players aren't made in games — they're made in the wall ball sessions no one sees."
 
 ---
 
@@ -912,20 +912,20 @@ The **Skills tab** helps athletes track their development through **tiered train
 
 **Purpose:** Focused offseason skill tracking.
 
-**Toggle on/off:** “Offseason Mode: Active”  
+**Toggle on/off:** "Offseason Mode: Active"  
  When on:
 
-* Wall Ball routines become “Weekly Goals”
+* Wall Ball routines become "Weekly Goals"
 
-* Adds “Track Daily Reps” counter
+* Adds "Track Daily Reps" counter
 
-* AI adjusts pacing to simulate a training plan (e.g., “3x/week Reflex Drills \+ 2x Passing Accuracy”)
+* AI adjusts pacing to simulate a training plan (e.g., "3x/week Reflex Drills \+ 2x Passing Accuracy")
 
 **Progress Ring:**
 
 * Shows weekly completion %
 
-* AI displays insight: “You’re pacing for 400 reps this month — that’s elite consistency.”
+* AI displays insight: "You're pacing for 400 reps this month — that's elite consistency."
 
 ---
 
@@ -943,23 +943,23 @@ The **Skills tab** helps athletes track their development through **tiered train
 
 **Coach Integration:**
 
-* Coaches can view athlete’s drill completion status and leave tier-specific notes.
+* Coaches can view athlete's drill completion status and leave tier-specific notes.
 
-* Athletes see those under “Coach Feedback” in-app.
+* Athletes see those under "Coach Feedback" in-app.
 
 ---
 
 ## **🎨 Design System Integration**
 
-Using \[StatLocker Typography & Colors\]:
+Using [StatLocker Typography & Colors]:
 
 | Element | Font | Weight | Color | Notes |
 | ----- | ----- | ----- | ----- | ----- |
-| Section Headers | Outfit\_700 | Bold | `#111827` | Motivational tone |
-| Body / Descriptions | InterTight\_400 | Regular | `#6B7280` | Compact |
-| Drill Titles | InterTight\_600 | Semibold | `brand.primary` | Clean clarity |
-| Progress Numbers | InterTight\_700 | Bold | `brand.accent` | Motivating |
-| Buttons | InterTight\_600 | Medium | `#FFFFFF` on `brand.primary` | Rounded-xl |
+| Section Headers | Outfit_700 | Bold | `#111827` | Motivational tone |
+| Body / Descriptions | InterTight_400 | Regular | `#6B7280` | Compact |
+| Drill Titles | InterTight_600 | Semibold | `brand.primary` | Clean clarity |
+| Progress Numbers | InterTight_700 | Bold | `brand.accent` | Motivating |
+| Buttons | InterTight_600 | Medium | `#FFFFFF` on `brand.primary` | Rounded-xl |
 
 **Tier Colors:**
 
@@ -979,7 +979,7 @@ Using \[StatLocker Typography & Colors\]:
 
 ## **🔥 Motion & Gamification**
 
-* Each tier unlock animates a “Tier Up\!” confetti burst.
+* Each tier unlock animates a "Tier Up!!" confetti burst.
 
 * Drill completion adds sound/haptic vibration.
 
@@ -1001,9 +1001,9 @@ Using \[StatLocker Typography & Colors\]:
 
 * Reinforces with messages:
 
-   “Let’s strengthen your weak-hand passing — try Drill 27 (Silver).”
+   "Let's strengthen your weak-hand passing — try Drill 27 (Silver)."
 
-* Connects directly to AI Coach tab (“Explain why this drill helps me”).
+* Connects directly to AI Coach tab ("Explain why this drill helps me").
 
 ---
 
@@ -1019,17 +1019,17 @@ Using \[StatLocker Typography & Colors\]:
 
 ## **📣 Example Microcopy**
 
-* **Empty state:** “Start your journey with Bronze drills. 25 reps a day beats 100 once a week.”
+* **Empty state:** "Start your journey with Bronze drills. 25 reps a day beats 100 once a week."
 
-* **AI Tip:** “You’re one week from Gold Tier. Don’t skip your off-hand work.”
+* **AI Tip:** "You're one week from Gold Tier. Don't skip your off-hand work."
 
-* **Motivational line:** “Consistency creates confidence.”
+* **Motivational line:** "Consistency creates confidence."
 
-* **Coach note:** “Erica: Great improvement in reaction speed\! Let’s push into Gold next week.”
+* **Coach note:** "Erica: Great improvement in reaction speed\! Let's push into Gold next week."
 
 # Wall Ball
 
-Let’s hard-gate Wall Ball progression behind full completion **and** a **coach sign-off**. Here’s the drop-in spec to layer on top of the Skills tab we just designed.
+Let's hard-gate Wall Ball progression behind full completion **and** a **coach sign-off**. Here's the drop-in spec to layer on top of the Skills tab we just designed.
 
 # **🔒 Wall Ball Progression — Coach-Verified Unlocks**
 
@@ -1049,13 +1049,13 @@ If either fails → drill stays locked; athlete receives feedback \+ can resubmi
 
 **A. Start Drill (Locked state visible for next drills)**
 
-* Drill Card shows lock 🔒 and “Coach sign-off required to unlock.”
+* Drill Card shows lock 🔒 and "Coach sign-off required to unlock."
 
 * CTA: **Start Drill** (current drill) → Log Reps.
 
 **B. Log Reps → Complete Attempt**
 
-* Rep logger enforces target reps (e.g., “50 clean reps”).
+* Rep logger enforces target reps (e.g., "50 clean reps").
 
 * Anti-spam guardrails:
 
@@ -1063,7 +1063,7 @@ If either fails → drill stays locked; athlete receives feedback \+ can resubmi
 
   * Pace sanity check (no impossible reps/sec spikes).
 
-  * Optional “No drops” self-attest checkbox (if no AI/video).
+  * Optional "No drops" self-attest checkbox (if no AI/video).
 
 * Optional: **Attach proof** (15–30s clip or selfie video) for remote coaches.
 
@@ -1075,7 +1075,7 @@ If either fails → drill stays locked; athlete receives feedback \+ can resubmi
 
 * Drill goes to **Pending Coach Review** (badge \+ greyed CTA).
 
-* Banner: “Waiting for Coach sign-off. You’ll get a notification.”
+* Banner: "Waiting for Coach sign-off. You'll get a notification."
 
 **D. Outcomes**
 
@@ -1091,7 +1091,7 @@ If either fails → drill stays locked; athlete receives feedback \+ can resubmi
 
 * **Skills \> Approvals** queue (coach app)
 
-* Messaging inbox card: “3 drills awaiting approval”
+* Messaging inbox card: "3 drills awaiting approval"
 
 * Player profile \> Skills tab \> Pending items
 
@@ -1121,11 +1121,11 @@ If either fails → drill stays locked; athlete receives feedback \+ can resubmi
 
 ## **4\) States & UI**
 
-* **Locked (up next):** Grey card, lock icon, “Complete previous drill \+ coach sign-off.”
+* **Locked (up next):** Grey card, lock icon, "Complete previous drill \+ coach sign-off."
 
-* **In Progress:** Progress ring, “32/50 reps logged.”
+* **In Progress:** Progress ring, "32/50 reps logged."
 
-* **Pending Review:** Yellow badge “Pending Coach,” disable log edits, show submitted timestamp.
+* **Pending Review:** Yellow badge "Pending Coach," disable log edits, show submitted timestamp.
 
 * **Approved:** Green badge, confetti on unlock; next drill activates.
 
@@ -1133,11 +1133,11 @@ If either fails → drill stays locked; athlete receives feedback \+ can resubmi
 
 **Microcopy**
 
-* Pending: “Good work. We’ve sent this to your coach for a quick review.”
+* Pending: "Good work. We've sent this to your coach for a quick review."
 
-* Rejected: “Almost there. Coach feedback: keep stick head out in front; reduce cradles.”
+* Rejected: "Almost there. Coach feedback: keep stick head out in front; reduce cradles."
 
-* Approved: “Signed off. Unlocking your next challenge.”
+* Approved: "Signed off. Unlocking your next challenge."
 
 ---
 
@@ -1145,15 +1145,15 @@ If either fails → drill stays locked; athlete receives feedback \+ can resubmi
 
 **Athlete**
 
-* Submitted → “Drill sent to Coach.”
+* Submitted → "Drill sent to Coach."
 
-* Approved → “Coach signed off. Next drill unlocked.”
+* Approved → "Coach signed off. Next drill unlocked."
 
-* Rejected → “Coach left feedback. Try again.”
+* Rejected → "Coach left feedback. Try again."
 
 **Coach**
 
-* New submission → “Review requested: \[Player\] • \[Drill\]”
+* New submission → "Review requested: \[Player\] • \[Drill\]"
 
 * Daily digest (if pending \> N)
 
@@ -1194,9 +1194,9 @@ If either fails → drill stays locked; athlete receives feedback \+ can resubmi
 
 * A drill **unlocks** only if:
 
-  * previous drill has a **submission.status \== 'approved'** (or is the first drill in tier), and
+  * previous drill has a **submission.status == 'approved'** (or is the first drill in tier), and
 
-  * any program-level prerequisites are satisfied (e.g., “Complete all Bronze to unlock Silver”).
+  * any program-level prerequisites are satisfied (e.g., "Complete all Bronze to unlock Silver").
 
 ---
 
@@ -1204,7 +1204,7 @@ If either fails → drill stays locked; athlete receives feedback \+ can resubmi
 
 * Only the **athlete** can create a submission for their userId.
 
-* Only **verified coaches** linked to athlete’s team/roster can write `coachReview` and change `status` from `pending`.
+* Only **verified coaches** linked to athlete's team/roster can write `coachReview` and change `status` from `pending`.
 
 * Athletes cannot edit a submission once created (only cancel if `pending` and no review yet).
 
@@ -1230,11 +1230,11 @@ If either fails → drill stays locked; athlete receives feedback \+ can resubmi
 
 * **Coach offline:** Submission stays pending; gentle reminders (24h).
 
-* **Wrong team coach:** Block approval (not on athlete’s roster).
+* **Wrong team coach:** Block approval (not on athlete's roster).
 
 * **Resubmission:** Fresh submissionId; keep audit trail.
 
-* **Tier completion:** All drills approved → **Tier Up** ceremony; next tier’s first drill unlocks.
+* **Tier completion:** All drills approved → **Tier Up** ceremony; next tier's first drill unlocks.
 
 ---
 
@@ -1242,13 +1242,13 @@ If either fails → drill stays locked; athlete receives feedback \+ can resubmi
 
 * Coach rejection **requires comment**; suggested quick-replies:
 
-  * “Form breaks at rep \~30; reduce cradles.”
+  * "Form breaks at rep ~30; reduce cradles."
 
-  * “Off-hand too slow; repeat Bronze 7 tomorrow.”
+  * "Off-hand too slow; repeat Bronze 7 tomorrow."
 
-  * “Great pace; ready for next.”
+  * "Great pace; ready for next."
 
-* Feedback appears in athlete’s **Milestones & Feedback** section and in drill history.
+* Feedback appears in athlete's **Milestones & Feedback** section and in drill history.
 
 ---
 
@@ -1294,14 +1294,14 @@ If either fails → drill stays locked; athlete receives feedback \+ can resubmi
 
 # Goals Tab
 
-Let’s design this like a cross between **Duolingo streaks**, **Apple Fitness rings**, and **Dunkin’ rewards milestones**, built specifically for athletes.
+Let's design this like a cross between **Duolingo streaks**, **Apple Fitness rings**, and **Dunkin' rewards milestones**, built specifically for athletes.
 
 Below is the complete **revamped Goals Tab specification**, matching your existing React Native \+ NativeWind architecture, your typography, and theme standards.
 
 ---
 
 
-# **🏆 Goals Tab — “Grind. Earn. Repeat.”**
+# **🏆 Goals Tab — "Grind. Earn. Repeat."**
 
 ## **🎯 Purpose**
 
@@ -1322,13 +1322,13 @@ Gamification keeps players coming back — not because they have to, but because
 
 ---
 
-## **🏁 1\. Hero Section – “Your Legacy Tracker”**
+## **🏁 1\. Hero Section – "Your Legacy Tracker"**
 
 **UI Layout:**
 
-* Top header: “My Goals”
+* Top header: "My Goals"
 
-* Subheader: “Earn badges. Build streaks. Level up.”
+* Subheader: "Earn badges. Build streaks. Level up."
 
 * Visual centerpiece:
 
@@ -1336,52 +1336,52 @@ Gamification keeps players coming back — not because they have to, but because
 
   * Inside ring:
 
-    * Fire emoji or bolt 🔥 icon with “14-Day Active Streak”
+    * Fire emoji or bolt 🔥 icon with "14-Day Active Streak"
 
-    * Tagline: “Every rep counts.”
+    * Tagline: "Every rep counts."
 
 **Microcopy Examples:**
 
-“Keep your streak alive — you’re 2 days from your next milestone badge\!”  
- “Grind mode unlocked 💪 — you’ve logged 3 games this week.”
+"Keep your streak alive — you're 2 days from your next milestone badge!!"  
+ "Grind mode unlocked 💪 — you've logged 3 games this week."
 
 **Behavior:**
 
 * Progress ring updates when user logs games, drills, or hits goals.
 
-* “XP sparkles” animation for recent activity.
+* "XP sparkles" animation for recent activity.
 
 ---
 
 ## **🎯 2\. Personal Goals Section**
 
-**Purpose:** Track measurable, position-based goals (e.g., “80% Save %”, “10+ Assists”, “50 Ground Balls”).
+**Purpose:** Track measurable, position-based goals (e.g., "80% Save %", "10+ Assists", "50 Ground Balls").
 
 **UI Layout:**
 
-* Cards (like your `GoalCard` component) but animated with glow borders when “On Track”.
+* Cards (like your `GoalCard` component) but animated with glow borders when "On Track".
 
 * Each card shows:
 
   * Icon (🏹 target / 🧤 glove / 🛡️ shield)
 
-  * Title: “80% Save Percentage”
+  * Title: "80% Save Percentage"
 
   * Progress bar: 72% → 80%
 
-  * Status Chip: “Ahead”, “On Track”, “Behind”
+  * Status Chip: "Ahead", "On Track", "Behind"
 
-  * Button: “View Trend” (opens mini chart overlay)
+  * Button: "View Trend" (opens mini chart overlay)
 
 **Microcopy Example:**
 
-“Consistency wins championships — 2 saves away from goal.”
+"Consistency wins championships — 2 saves away from goal."
 
 **AI Assist (Pro Feature):**
 
-* “Suggest New Goal” → Based on stat trends:
+* "Suggest New Goal" → Based on stat trends:
 
-  * e.g., “You’re averaging 9.8 saves/game. Set a goal to hit 12 by next week?”
+  * e.g., "You're averaging 9.8 saves/game. Set a goal to hit 12 by next week?"
 
 * Uses AI Coach logic to auto-generate new achievable challenges.
 
@@ -1396,11 +1396,11 @@ Each badge has a **color**, **icon**, and **tier** (Bronze → Silver → Gold �
 
 | Category | Examples | Triggers |
 | ----- | ----- | ----- |
-| **Performance Badges** | “The Wall” (15 saves), “Lockdown D” (0 GA game), “Sniper” (5+ goals) | In-game stats |
-| **Consistency Badges** | “7-Day Streak”, “30 Days Logged”, “No Miss Weeks” | Daily app use |
-| **Skill Badges** | “Reflex Master”, “Off-Hand Warrior”, “Clear King” | Drill completions |
-| **Teamwork Badges** | “Assist Machine”, “Game MVP”, “Coach’s Shoutout” | Team feedback |
-| **App Engagement** | “First Game Logged”, “Recruiting Profile Complete”, “AI Chat 10x” | In-app actions |
+| **Performance Badges** | "The Wall" (15 saves), "Lockdown D" (0 GA game), "Sniper" (5+ goals) | In-game stats |
+| **Consistency Badges** | "7-Day Streak", "30 Days Logged", "No Miss Weeks" | Daily app use |
+| **Skill Badges** | "Reflex Master", "Off-Hand Warrior", "Clear King" | Drill completions |
+| **Teamwork Badges** | "Assist Machine", "Game MVP", "Coach's Shoutout" | Team feedback |
+| **App Engagement** | "First Game Logged", "Recruiting Profile Complete", "AI Chat 10x" | In-app actions |
 
 ### **🧩 Badge Card UI**
 
@@ -1408,55 +1408,55 @@ Each Badge Card includes:
 
 * Badge icon (glowing border if unlocked)
 
-* Title: “The Wall”
+* Title: "The Wall"
 
-* Description: “15 saves in one game.”
+* Description: "15 saves in one game."
 
-* Tier: “Gold”
+* Tier: "Gold"
 
 * Earned date (if unlocked)
 
-* Locked badges show grayscale with hint: “Keep grinding to reveal.”
+* Locked badges show grayscale with hint: "Keep grinding to reveal."
 
 ### **🏅 Example Position-Specific Badges**
 
 **Goalie:**
 
-* “The Wall” — 15+ saves in a game.
+* "The Wall" — 15+ saves in a game.
 
-* “100 Club” — 100 total saves this season.
+* "100 Club" — 100 total saves this season.
 
-* “Clean Sheet” — 0 goals allowed.
+* "Clean Sheet" — 0 goals allowed.
 
-* “Quick Clear King” — 90%+ clearing accuracy.
+* "Quick Clear King" — 90%+ clearing accuracy.
 
 **Attack:**
 
-* “Sniper” — 5+ goals in a game.
+* "Sniper" — 5+ goals in a game.
 
-* “Hat Trick Hero” — 3+ goals x3 games.
+* "Hat Trick Hero" — 3+ goals x3 games.
 
-* “Assist Artist” — 3 assists in one game.
+* "Assist Artist" — 3 assists in one game.
 
-* “Two-Hand Threat” — scores with both hands in one match.
+* "Two-Hand Threat" — scores with both hands in one match.
 
 **Midfield/Defense:**
 
-* “Ground Ball Beast” — 50 GBs total.
+* "Ground Ball Beast" — 50 GBs total.
 
-* “Anchor” — 4Q Defensive Stops.
+* "Anchor" — 4Q Defensive Stops.
 
-* “Enforcer” — 10+ caused turnovers.
+* "Enforcer" — 10+ caused turnovers.
 
 **Universal (All Players):**
 
-* “Streak On Fire” — 10 active days in a row.
+* "Streak On Fire" — 10 active days in a row.
 
-* “Perfect Attendance” — logged every week for a month.
+* "Perfect Attendance" — logged every week for a month.
 
-* “Locker Legend” — earned 25 badges.
+* "Locker Legend" — earned 25 badges.
 
-* “Coach Approved” — received feedback on all drills in a tier.
+* "Coach Approved" — received feedback on all drills in a tier.
 
 ---
 
@@ -1473,27 +1473,27 @@ Each Badge Card includes:
   * Each milestone lights up as achieved.
 
   * Tap node → show stat summary popup:  
-     “Week 4 — Hit 80% Save % and earned ‘The Wall’ badge.”
+     "Week 4 — Hit 80% Save % and earned 'The Wall' badge."
 
 * Next milestone preview card:
 
-  * “Up Next: Hit 10 Clean Games for Platinum Reflex Badge.”
+  * "Up Next: Hit 10 Clean Games for Platinum Reflex Badge."
 
-  * CTA: “Track My Progress”
+  * CTA: "Track My Progress"
 
 **Color coding:**
 
-* Green \= completed
+* Green = completed
 
-* Gray \= upcoming
+* Gray = upcoming
 
-* Purple glow \= current challenge
+* Purple glow = current challenge
 
 ---
 
 ## **🔥 5\. XP & Level System (Future Phase)**
 
-Introduce “Locker Level” — every action gives XP.  
+Introduce "Locker Level" — every action gives XP.  
  Players earn XP by:
 
 * Logging games
@@ -1513,23 +1513,23 @@ Introduce “Locker Level” — every action gives XP.
 
 XP display: progress bar at bottom of Goals screen.
 
-“200 XP to reach Level 3: Captain.”
+"200 XP to reach Level 3: Captain."
 
 ---
 
 ## **🧩 In-App Task Badges (Engagement Layer)**
 
-* “Created First Goal” 🏁
+* "Created First Goal" 🏁
 
-* “Completed Onboarding” ✅
+* "Completed Onboarding" ✅
 
-* “Logged 10 Games” 📊
+* "Logged 10 Games" 📊
 
-* “Used AI Coach 5 Times” 🧠
+* "Used AI Coach 5 Times" 🧠
 
-* “Earned First Badge” 🥇
+* "Earned First Badge" 🥇
 
-* “Subscribed to Pro” 💎
+* "Subscribed to Pro" 💎
 
 🎮 Think Duolingo-style pop-ups: celebratory animation \+ confetti \+ haptic feedback.
 
@@ -1545,7 +1545,7 @@ XP display: progress bar at bottom of Goals screen.
 
 * **Tier transition animation:** color flash \+ vibration.
 
-* **Daily reminder:** “Don’t lose your streak 🔥” push.
+* **Daily reminder:** "Don't lose your streak 🔥" push.
 
 ---
 
@@ -1553,9 +1553,9 @@ XP display: progress bar at bottom of Goals screen.
 
 * AI Coach monitors trends and suggests new badges or goals:
 
-  * “You’ve saved 40 shots this month — let’s aim for the 50 Saves Milestone next.”
+  * "You've saved 40 shots this month — let's aim for the 50 Saves Milestone next."
 
-  * “Your clear % dropped 5%. Want a badge for improving it next week?”
+  * "Your clear % dropped 5%. Want a badge for improving it next week?"
 
 **Tone:** Motivational, concise, and personalized — like a digital coach texting encouragement.
 
@@ -1580,9 +1580,9 @@ XP display: progress bar at bottom of Goals screen.
 
 ## **🧩 Coach View Integration**
 
-* Coaches can assign “Team Goals” (e.g., “90% Clear Success”).
+* Coaches can assign "Team Goals" (e.g., "90% Clear Success").
 
-* Team badges (“Team Lockdown” 🛡️) unlock when all players meet thresholds.
+* Team badges ("Team Lockdown" 🛡️) unlock when all players meet thresholds.
 
 * Leaderboard view (optional): ranks players by badges earned.
 
@@ -1619,21 +1619,21 @@ XP display: progress bar at bottom of Goals screen.
  ✅ Lock/Unlock logic with streaks  
  ✅ Confetti celebration \+ animations  
  ✅ Coach feedback integration (comment on badges)  
- ✅ AI-driven “Goal Suggestion”
+ ✅ AI-driven "Goal Suggestion"
 
 ---
 
 ## **💬 Microcopy Library**
 
-* **Unlock message:** “Badge earned — The Wall\! 🧱 You stopped 15+ shots this game.”
+* **Unlock message:** "Badge earned — The Wall! 🧱 You stopped 15+ shots this game."
 
-* **Milestone hint:** “2 more clean sheets until your Platinum Reflex badge\!”
+* **Milestone hint:** "2 more clean sheets until your Platinum Reflex badge!!"
 
-* **Streak reminder:** “🔥 Keep your streak alive — 3 days left for next milestone.”
+* **Streak reminder:** "🔥 Keep your streak alive — 3 days left for next milestone."
 
-* **Coach comment:** “You’ve earned this one. Hard work showing in your clears.”
+* **Coach comment:** "You've earned this one. Hard work showing in your clears."
 
-* **AI quote:** “Elite habits stack — you’re 5 saves from ‘Legend Status.’”
+* **AI quote:** "Elite habits stack — you're 5 saves from 'Legend Status.'"
 
 ---
 
@@ -1641,9 +1641,9 @@ XP display: progress bar at bottom of Goals screen.
 
 * **Badge Shop** (cosmetic items, themes, sounds).
 
-* **Team Leaderboards** → see who’s grinding hardest.
+* **Team Leaderboards** → see who's grinding hardest.
 
-* **Share Badge** → social sharing template (“Just earned The Wall on StatLocker 🧱”).
+* **Share Badge** → social sharing template ("Just earned The Wall on StatLocker 🧱").
 
 * **Coach Challenges** → team-wide milestones during season.
 
@@ -1652,7 +1652,7 @@ XP display: progress bar at bottom of Goals screen.
 
 # AI Coach Tab
 
-# **🧠 AI Coach Tab — “Your Personal Locker Room Mentor”**
+# **🧠 AI Coach Tab — "Your Personal Locker Room Mentor"**
 
 ## **🎯 Mission**
 
@@ -1682,7 +1682,7 @@ Think **Strava Coach \+ Apple Fitness Rings \+ ChatGPT personality** — all wit
 
 ---
 
-## **🏁 1\. Hero Header — “Meet Your AI Coach”**
+## **🏁 1\. Hero Header — "Meet Your AI Coach"**
 
 **Visual:**
 
@@ -1700,18 +1700,18 @@ Think **Strava Coach \+ Apple Fitness Rings \+ ChatGPT personality** — all wit
 
 **Top elements:**
 
-* Greeting: “Hey Alex, I reviewed your last 3 games — ready for your weekly breakdown?”
+* Greeting: "Hey Alex, I reviewed your last 3 games — ready for your weekly breakdown?"
 
 * Toggle group → Tone selector chips (Hype / Mentor / Analyst / Recruiting)
 
 **Microcopy Examples:**
 
-“Let’s break down your weekend tournament.”  
- “🔥 You’re trending up — want me to build a custom drill list?”
+"Let's break down your weekend tournament."  
+ "🔥 You're trending up — want me to build a custom drill list?"
 
 ---
 
-## **💬 2\. Conversation Feed — “Smart Threads, Not Plain Text”**
+## **💬 2\. Conversation Feed — "Smart Threads, Not Plain Text"**
 
 Instead of plain chat bubbles:
 
@@ -1729,22 +1729,22 @@ Instead of plain chat bubbles:
 
 | Icon | Context | AI Message |
 | ----- | ----- | ----- |
-| 📊 | Stat Breakdown | “Save % improved 6% — best quarter: 3rd (92%). Keep that momentum.” |
-| 🧩 | Drill Rec | “Run Bronze Drill \#4 ‘Low Save Control’ — matches your current reaction trend.” |
-| 🎯 | Goal Progress | “You’re 3 saves away from ‘The Wall’ badge. Let’s close it this week.” |
-| 💬 | Motivation | “Pressure makes diamonds. Stay sharp this weekend.” |
+| 📊 | Stat Breakdown | "Save % improved 6% — best quarter: 3rd (92%). Keep that momentum." |
+| 🧩 | Drill Rec | "Run Bronze Drill #4 'Low Save Control' — matches your current reaction trend." |
+| 🎯 | Goal Progress | "You're 3 saves away from 'The Wall' badge. Let's close it this week." |
+| 💬 | Motivation | "Pressure makes diamonds. Stay sharp this weekend." |
 
 **Player Input Enhancements**
 
 * Input bar with *smart suggestions above keyboard*:
 
-  * “What should I work on next?”
+  * "What should I work on next?"
 
-  * “Analyze my last game.”
+  * "Analyze my last game."
 
-  * “Show my streak stats.”
+  * "Show my streak stats."
 
-  * “Recommend drills.”
+  * "Recommend drills."
 
 * Quick-send voice button 🎤 for conversational flow.
 
@@ -1752,7 +1752,7 @@ Instead of plain chat bubbles:
 
 ---
 
-## **🔍 3\. Insight Modules — “AI-Generated Cards Below Chat”**
+## **🔍 3\. Insight Modules — "AI-Generated Cards Below Chat"**
 
 Below the main chat feed (scrolls together):
 
@@ -1762,11 +1762,11 @@ Below the main chat feed (scrolls together):
 
   * Example:
 
-    * **🔥 Momentum Meter**: “You’ve increased Save % by \+9% this month.”
+    * **🔥 Momentum Meter**: "You've increased Save % by +9% this month."
 
-    * **🎯 Focus Area**: “Low-left reactions dropped to 70%. Try Goalie Drill \#3.”
+    * **🎯 Focus Area**: "Low-left reactions dropped to 70%. Try Goalie Drill #3."
 
-    * **💪 Strength Highlight**: “You’re elite at clearing — top 10% among peers.”
+    * **💪 Strength Highlight**: "You're elite at clearing — top 10% among peers."
 
 * **Stat Trends Mini Graphs**
 
@@ -1778,41 +1778,41 @@ Below the main chat feed (scrolls together):
 
   * Drill name, Tier, and progress ring.
 
-  * CTA → “Start Drill.”
+  * CTA → "Start Drill."
 
 **Microcopy Example:**
 
-“Your off-hand stick speed improved 15%. Let’s add the Silver ‘Quick Stick Reactions’ drill next.”
+"Your off-hand stick speed improved 15%. Let's add the Silver 'Quick Stick Reactions' drill next."
 
 ---
 
-## **⚙️ 4\. Suggested Actions — “Quick Interactions with AI”**
+## **⚙️ 4\. Suggested Actions — "Quick Interactions with AI"**
 
 Persistent buttons above input bar (horizontal scroll):
 
-* 🧱 “Analyze My Game”
+* 🧱 "Analyze My Game"
 
-* 🧤 “Goalie Drill Plan”
+* 🧤 "Goalie Drill Plan"
 
-* 🧩 “Recommend 3 Skills”
+* 🧩 "Recommend 3 Skills"
 
-* 📈 “Show Trend Graphs”
+* 📈 "Show Trend Graphs"
 
-* 🎓 “Recruiting Tips”
+* 🎓 "Recruiting Tips"
 
-* 🔁 “Daily Motivation”
+* 🔁 "Daily Motivation"
 
 These trigger AI prompts pre-filled with contextual data (grad year, position, stats).
 
 **Example Flow:**  
- Tap “Analyze My Game” → AI pulls last logged game from Firestore → responds with structured breakdown:
+ Tap "Analyze My Game" → AI pulls last logged game from Firestore → responds with structured breakdown:
 
 `GAME SUMMARY`  
 `Save %: 81%`  
 `Shots Faced: 14`  
 `Clears: 8/9 (89%)`  
-`Coach Note: “Elite focus today.”`  
-`AI Insight: “You controlled rebounds better — keep your top hand relaxed.”`
+`Coach Note: "Elite focus today."`  
+`AI Insight: "You controlled rebounds better — keep your top hand relaxed."`
 
 ---
 
@@ -1822,15 +1822,15 @@ These trigger AI prompts pre-filled with contextual data (grad year, position, s
 
 **Layout:**
 
-* “Session History” button → opens modal
+* "Session History" button → opens modal
 
 * Shows recent conversations labeled by topic:
 
-  * “Game Review – 10/12”
+  * "Game Review – 10/12"
 
-  * “Skill Plan – 10/20”
+  * "Skill Plan – 10/20"
 
-  * “Recruiting Advice – 10/25”
+  * "Recruiting Advice – 10/25"
 
 * Tap → reloads that chat context (AI remembers thread ID if stored).
 
@@ -1840,18 +1840,18 @@ These trigger AI prompts pre-filled with contextual data (grad year, position, s
 
 | Element | Font | Weight | Color |
 | ----- | ----- | ----- | ----- |
-| Headers | Outfit\_700 | 700 | brand.primary |
-| Body | InterTight\_400 | 400 | ink.subtle |
-| Insight Titles | InterTight\_600 | 600 | brand.accent |
-| Input Field | InterTight\_500 | 500 | \#111827 |
+| Headers | Outfit_700 | 700 | brand.primary |
+| Body | InterTight_400 | 400 | ink.subtle |
+| Insight Titles | InterTight_600 | 600 | brand.accent |
+| Input Field | InterTight_500 | 500 | \#111827 |
 
 **Animations**
 
-* Lottie pulse for AI “thinking”
+* Lottie pulse for AI "thinking"
 
 * Slide-up motion for Insight Cards
 
-* Confetti \+ haptic for milestone mention (“Congrats\! New badge unlocked 🏆”)
+* Confetti \+ haptic for milestone mention ("Congrats! New badge unlocked 🏆")
 
 * Avatar glow changes color with tone (using Reanimated transitions).
 
@@ -1863,10 +1863,10 @@ These trigger AI prompts pre-filled with contextual data (grad year, position, s
 
 | Mode | Tone | Example Prompt Behavior |
 | ----- | ----- | ----- |
-| 🧠 Analyst | Data-driven | “Based on your 4Q stats, reaction speed is improving.” |
-| 🔥 Hype | Motivational | “Let’s go\! You’re playing like a wall out there.” |
-| 🎯 Mentor | Calm & wise | “Every save teaches patience — let’s refine your setup.” |
-| 🎓 Recruiting | Professional | “Let’s refine your intro email to coaches.” |
+| 🧠 Analyst | Data-driven | "Based on your 4Q stats, reaction speed is improving." |
+| 🔥 Hype | Motivational | "Let's go! You're playing like a wall out there." |
+| 🎯 Mentor | Calm & wise | "Every save teaches patience — let's refine your setup." |
+| 🎓 Recruiting | Professional | "Let's refine your intro email to coaches." |
 
 Each mode adjusts:
 
@@ -1894,7 +1894,7 @@ Every AI prompt is enriched with:
 
 Example system prompt (to Gemini/OpenAI):
 
-“You are StatLocker’s AI Coach mentoring \[Erica Brothers\], a 2026 lacrosse goalie. Her Save % is 81%, she’s in Gold Tier drills, and is chasing ‘The Wall’ badge. Respond concisely with encouragement and 1 actionable step.”
+"You are StatLocker's AI Coach mentoring [Erica Brothers], a 2026 lacrosse goalie. Her Save % is 81%, she's in Gold Tier drills, and is chasing 'The Wall' badge. Respond concisely with encouragement and 1 actionable step."
 
 ---
 
@@ -1914,21 +1914,21 @@ Example system prompt (to Gemini/OpenAI):
  ✅ Introduce **Quick Actions Carousel**  
  ✅ Add **Performance Insights Carousel** below chat  
  ✅ Enable **Session History Modal**  
- ✅ Animate “thinking” \+ haptic cues
+ ✅ Animate "thinking" \+ haptic cues
 
 ---
 
 ## **✍️ Microcopy & Personality**
 
-* “You’re not chasing perfection — you’re building consistency.”
+* "You're not chasing perfection — you're building consistency."
 
-* “Let’s push for Gold Tier drills next. You’re ready.”
+* "Let's push for Gold Tier drills next. You're ready."
 
-* “Recruiting starts with confidence. I’ll help craft your first email.”
+* "Recruiting starts with confidence. I'll help craft your first email."
 
-* “🔥 Save % trending up — don’t let off the gas.”
+* "🔥 Save % trending up — don't let off the gas."
 
-* “One wall ball session away from unlocking your next badge.”
+* "One wall ball session away from unlocking your next badge."
 
 ---
 
@@ -1936,9 +1936,9 @@ Example system prompt (to Gemini/OpenAI):
 
 * **Voice Mode (TTS)** → spoken encouragement after games.
 
-* **Weekly Report PDF** → AI auto-generates “Weekly Performance Summary.”
+* **Weekly Report PDF** → AI auto-generates "Weekly Performance Summary."
 
-* **AI Challenges** → “Complete 3 drills I assign this week to earn a bonus badge.”
+* **AI Challenges** → "Complete 3 drills I assign this week to earn a bonus badge."
 
 * **Coach AI Companion** → Team dashboards with summarized player AI insights.
 
@@ -1947,7 +1947,7 @@ Example system prompt (to Gemini/OpenAI):
 
 # Messages Tab
 
-# **💬 Messages — “Keep the Team in Sync”**
+# **💬 Messages — "Keep the Team in Sync"**
 
 ## **🎯 Objectives**
 
@@ -2005,9 +2005,9 @@ Example system prompt (to Gemini/OpenAI):
 
   * Bubble (text or rich attachment)
 
-  * Reactions bar (👍🔥👏) \+ “Reply” \+ timestamp
+  * Reactions bar (👍🔥👏) \+ "Reply" \+ timestamp
 
-  * Read receipts avatar stack (first 3 \+ “+2”)
+  * Read receipts avatar stack (first 3 \+ "+2")
 
 **Composer**
 
@@ -2019,7 +2019,7 @@ Example system prompt (to Gemini/OpenAI):
 
   * 📊 Poll (coach)
 
-  * 📣 Announcement (coach, channel \= announcements)
+  * 📣 Announcement (coach, channel = announcements)
 
   * ✅ Assign (coach → drill/goal to players)
 
@@ -2049,17 +2049,17 @@ Example system prompt (to Gemini/OpenAI):
 
 3. **Drill Assignment Card** (from Skills)
 
-   * Drill, tier, due date, “Mark Done” / “Ask Coach”
+   * Drill, tier, due date, "Mark Done" / "Ask Coach"
 
    * Auto-updates completion
 
 4. **Goal/Badge Card** (from Goals)
 
-   * “Badge earned: The Wall 🧱” with shareable flair
+   * "Badge earned: The Wall 🧱" with shareable flair
 
 5. **Announcement** (coach)
 
-   * Highlight style, “Acknowledge” button \+ reactions
+   * Highlight style, "Acknowledge" button \+ reactions
 
 6. **Poll**
 
@@ -2077,7 +2077,7 @@ All cards should deep-link into their home tab.
 
 **Channels**
 
-* Anyone can chat; **\#announcements** read-only for coaches
+* Anyone can chat; **#announcements** read-only for coaches
 
 * Pin up to 5 messages per channel
 
@@ -2085,7 +2085,7 @@ All cards should deep-link into their home tab.
 
 **DMs**
 
-* Create from profile peek or composer “New”
+* Create from profile peek or composer "New"
 
 * Leave group; rename; add/remove members (creator/coach)
 
@@ -2214,7 +2214,7 @@ All cards should deep-link into their home tab.
 
 * In-app toast for: poll results updated, coach pinned a message
 
-* Digest (optional): “3 unread in \#team-chat, 1 assignment due tomorrow”
+* Digest (optional): "3 unread in #team-chat, 1 assignment due tomorrow"
 
 ---
 
@@ -2240,13 +2240,13 @@ All cards should deep-link into their home tab.
 
 ## **🪄 Microcopy (on-brand)**
 
-* Empty channel: “Break the ice. Share a win or set a goal.”
+* Empty channel: "Break the ice. Share a win or set a goal."
 
-* Announcements: “Acknowledge to let coach know you’re locked in.”
+* Announcements: "Acknowledge to let coach know you're locked in."
 
-* Poll CTA: “Vote now — closes in 2 hours.”
+* Poll CTA: "Vote now — closes in 2 hours."
 
-* Assignment toast: “Coach assigned ‘Quick Stick Reactions’ due Fri.”
+* Assignment toast: "Coach assigned 'Quick Stick Reactions' due Fri."
 
 ---
 
@@ -2272,16 +2272,16 @@ All cards should deep-link into their home tab.
 
 * Scheduled send & recurring announcements
 
-* Auto-summaries (“AI: summarize last 200 messages”)
+* Auto-summaries ("AI: summarize last 200 messages")
 
-* Coach approval workflows surfaced in-chat (“Approve wall ball submission”)
+* Coach approval workflows surfaced in-chat ("Approve wall ball submission")
 
 
 
 
 # Profile Tab
 
-# **🧍‍♀️ Profile — “Your Stats. Your Story. Your Future.”**
+# **🧍‍♀️ Profile — "Your Stats. Your Story. Your Future."**
 
 ## **🎯 Purpose**
 
@@ -2296,27 +2296,17 @@ All cards should deep-link into their home tab.
 ---
 
 ## **🧱 Information Architecture (top → bottom)**
-
 1. **Header Card (Hero)**
-
 2. **Toggle: High School | Club**
-
 3. **Highlight Stats (position-aware)**
-
 4. **Goals & Badges**
-
 5. **Skills / Tier Status (Wall Ball)**
-
 6. **Academics & Docs (optional)**
-
+6b. **Health & Safety** (private by default; per-field share)
 7. **Coach Feedback**
-
 8. **About & Links**
-
 9. **Privacy & Share**
-
 A persistent **Edit** button (top-right) opens a sheet with sectioned forms.
-
 ---
 
 ## **🎨 1\) Header Card (Hero)**
@@ -2337,11 +2327,11 @@ A persistent **Edit** button (top-right) opens a sheet with sectioned forms.
 
 **Microcopy**
 
-“Every rep writes your story. Keep logging.”
+"Every rep writes your story. Keep logging."
 
 **Visual**
 
-* Subtle team-color banner; pulse on first visit of the week (“Welcome back”).
+* Subtle team-color banner; pulse on first visit of the week ("Welcome back").
 
 ---
 
@@ -2355,7 +2345,7 @@ Switch context for the entire profile—stats, goals, highlights, and badges fil
 
   * Recent games feed (if included later)
 
-  * Goals progress (scope \= HS or Club)
+  * Goals progress (scope = HS or Club)
 
 ---
 
@@ -2369,15 +2359,15 @@ Switch context for the entire profile—stats, goals, highlights, and badges fil
 
 **Card Anatomy**
 
-* Title (e.g., “Save %”) \+ Sparkline (last 5\)
+* Title (e.g., "Save %") \+ Sparkline (last 5\)
 
-* Big number (Inter Tight 700\) \+ delta chip (“+4% vs season”)
+* Big number (Inter Tight 700\) \+ delta chip ("+4% vs season")
 
 * Tap → deep-link to Stats \> detail
 
 **Empty state**
 
-“Log 3 games to unlock trends.”
+"Log 3 games to unlock trends."
 
 ---
 
@@ -2387,7 +2377,7 @@ Switch context for the entire profile—stats, goals, highlights, and badges fil
 
 * 3 active goals → progress bars \+ status chips (On Track / Catch Up / Stretch)
 
-* CTA: “View all goals” → Goals tab; “Adjust target” (Pro)
+* CTA: "View all goals" → Goals tab; "Adjust target" (Pro)
 
 **Badges block**
 
@@ -2397,7 +2387,7 @@ Switch context for the entire profile—stats, goals, highlights, and badges fil
 
 **Microcopy**
 
-“One game away from ‘The Wall’ badge.”
+"One game away from 'The Wall' badge."
 
 ---
 
@@ -2407,9 +2397,9 @@ Switch context for the entire profile—stats, goals, highlights, and badges fil
 
 * Next Drill tile (locked until coach sign-off if you enabled that rule)
 
-* CTA: “Resume Drill” / “Submit to Coach” (pending state)
+* CTA: "Resume Drill" / "Submit to Coach" (pending state)
 
-**Coach note inline** if previous submission was rejected (one-liner \+ “See why”).
+**Coach note inline** if previous submission was rejected (one-liner \+ "See why").
 
 ---
 
@@ -2431,7 +2421,50 @@ Switch context for the entire profile—stats, goals, highlights, and badges fil
 
 **Tip**
 
-“Coaches often ask for transcripts early—add yours to stay ready.”
+"Coaches often ask for transcripts early—add yours to stay ready."
+
+---
+
+## **🩺 6b) Health & Safety (Athlete-owned with per-field sharing)**
+
+**Purpose:** Centralize critical health information for the athlete, with explicit per-field controls to optionally share specific items with verified coaches.
+
+**Visibility & Privacy (Phase 1):**
+
+* Default: All health data is private to the athlete.
+* Per-field "Share with coach" indicator (read-only for Phase 1). Actual toggling/persistence ships in Phase 2.
+* Coaches will only ever see fields explicitly shared (Phase 2 coach view).
+
+**Fields (read-only UI for Phase 1):**
+
+* Emergency Contacts (multiple): name, relation, phone, notes • Share state pill
+* Allergies: item name + severity (mild | moderate | severe) • Share state pill
+* Conditions: e.g., asthma, concussion history • Share state pill
+* Medications: name, dosage, schedule, notes • Share state pill
+* Blood Type: O+ | O- | A+ | A- | B+ | B- | AB+ | AB-
+* Medical Notes (optional): free text • Share state pill
+
+**UI Layout (NativeWind-ready):**
+
+* Section Card: `rounded-2xl shadow-card border-line p-4`
+* Header: "Health & Safety" (Outfit 700)
+* Sub-blocks:
+  * Emergency Contacts list (stacked cards)
+  * Health Info grid (Allergies, Conditions, Medications, Blood Type, Notes)
+* Share indicator component: `SharePill` with states:
+  * Private (slate/neutral)
+  * Shared (brand.primary)
+
+**Coach View (Phase 2):**
+
+* Derived rendering limited to items where `shared: true`.
+* No edit rights for coaches; read-only access.
+
+**Phase 2 Implementation Notes:**
+
+* Add edit forms, CRUD, per-field `shared` toggles.
+* Persist to Firestore with role-based read rules.
+* Optional: emergency PDF/QR export for sideline staff.
 
 ---
 
@@ -2441,7 +2474,7 @@ Switch context for the entire profile—stats, goals, highlights, and badges fil
 
 * Pill filters: All | Skills | Game | Recruiting
 
-* “Request Feedback” button → opens message prefilled with last game link
+* "Request Feedback" button → opens message prefilled with last game link
 
 ---
 
@@ -2479,11 +2512,11 @@ Switch context for the entire profile—stats, goals, highlights, and badges fil
 
 * **Share**:
 
-  * “Copy Link”
+  * "Copy Link"
 
-  * “Show QR” (fullscreen)
+  * "Show QR" (fullscreen)
 
-  * “Export Player Card (PNG/PDF)” (branded one-pager)
+  * "Export Player Card (PNG/PDF)" (branded one-pager)
 
 **Public profile route:** `/a/{username-or-id}` (read-only, SEO-blocked).
 
@@ -2493,7 +2526,7 @@ Switch context for the entire profile—stats, goals, highlights, and badges fil
 
 * Section headers slide-in on scroll; stat numbers count-up on first render
 
-* Haptic success on “Copy Link,” “Doc Uploaded,” “Coach Sign-off Approved”
+* Haptic success on "Copy Link,", "Doc Uploaded,", "Coach Sign-off Approved"
 
 * Confetti when a badge is earned (if it happened since last visit)
 
@@ -2523,9 +2556,9 @@ Inline validation \+ autosave on close.
 
 * **Athlete:** edit everything for self; toggle public link
 
-* **Coach (verified, linked):** can leave feedback; can **endorse** a stat or drill completion (adds “Coach-Verified” stamp)
+* **Coach (verified, linked):** can leave feedback; can **endorse** a stat or drill completion (adds "Coach-Verified" stamp)
 
-* **Public:** read-only per athlete’s privacy choices
+* **Public:** read-only per athlete's privacy choices
 
 ---
 
@@ -2568,6 +2601,16 @@ Derived collections for display:
 `goals_active/{goalId}`  
 `badges_recent/{badgeId}`  
 `skills_status/{programId}      // wall ball tier, pending submissions, etc.`
+
+`// Phase 2 example: health profile stored with per-field share flags`
+`health: {`
+`  emergencyContacts: [{ id, name, relation, phone, notes, shared }],`
+`  allergies: [{ id, name, severity: 'mild|moderate|severe', shared }],`
+`  conditions: [{ id, name, shared }],`
+`  medications: [{ id, name, dosage, schedule, notes?, shared }],`
+`  bloodType: 'O+|O-|A+|A-|B+|B-|AB+|AB-',`
+`  medicalNotes?: string`
+`}`
 
 ---
 
@@ -2633,15 +2676,15 @@ Derived collections for display:
 
 ## **🪄 Microcopy Library**
 
-* **Header tagline:** “Show the work. Celebrate the wins.”
+* **Header tagline:** "Show the work. Celebrate the wins."
 
-* **Share sheet:** “Send your Player Card to coaches or friends.”
+* **Share sheet:** "Send your Player Card to coaches or friends."
 
-* **Privacy tip:** “Control exactly what appears on your public link.”
+* **Privacy tip:** "Control exactly what appears on your public link."
 
-* **Docs prompt:** “Upload your transcript to be recruiting-ready.”
+* **Docs prompt:** "Upload your transcript to be recruiting-ready."
 
-* **Coach note empty:** “No feedback yet — ask your coach for a quick review.”
+* **Coach note empty:** "No feedback yet — ask your coach for a quick review."
 
 ---
 
@@ -2655,7 +2698,7 @@ Derived collections for display:
 
 4. **Public Profile toggle \+ Share (link/QR) \+ Export PNG**
 
-5. **Academics \+ docs upload (optional in MVP if recruiting isn’t day-1)**
+5. **Academics \+ docs upload (optional in MVP if recruiting isn't day-1)**
 
 6. **Coach feedback feed (read-only)**
 
@@ -2665,7 +2708,7 @@ Derived collections for display:
 
 * Themeable Player Card (brand overlays, gradients)
 
-* “Coach Endorsement” stamps on stat cards
+* "Coach Endorsement" stamps on stat cards
 
 * Public micro-landing with contact button (masked relay email)
 
@@ -2676,11 +2719,11 @@ Derived collections for display:
 
 # Game Details Screen
 
-# **🏟️ Game Details — “Every Game Tells a Story”**
+# **🏟️ Game Details — "Every Game Tells a Story"**
 
 ## **🎯 Purpose**
 
-Display everything about a single game — stats, insights, trends, and milestones — in a way that’s visual, motivational, and coach-friendly.
+Display everything about a single game — stats, insights, trends, and milestones — in a way that's visual, motivational, and coach-friendly.
 
 ---
 
@@ -2707,7 +2750,7 @@ Display everything about a single game — stats, insights, trends, and mileston
 
 * Date \+ Time
 
-* Scoreline: “Duxbury 10 — Scituate 7”
+* Scoreline: "Duxbury 10 — Scituate 7"
 
 * Tag: ✅ **Win** or ❌ **Loss**
 
@@ -2723,17 +2766,17 @@ Display everything about a single game — stats, insights, trends, and mileston
 
   * Loss → crimson accent (`#DC2626`)
 
-* Add a **share icon** → generates social card (“StatLocker Game Summary”)
+* Add a **share icon** → generates social card ("StatLocker Game Summary")
 
 **Microcopy:**
 
-“Defense wins games — this one showed it.”
+"Defense wins games — this one showed it."
 
 ---
 
 ## **📊 2\. Performance Summary**
 
-**Purpose:** Quick snapshot of the player’s game performance vs season average.
+**Purpose:** Quick snapshot of the player's game performance vs season average.
 
 **Layout:**
 
@@ -2751,7 +2794,7 @@ Display everything about a single game — stats, insights, trends, and mileston
 
   * Mini sparkline (last 5 games)
 
-  * Subtext: “↑ \+4% vs season avg”
+  * Subtext: "↑ +4% vs season avg"
 
 **Interaction:**
 
@@ -2761,7 +2804,7 @@ Display everything about a single game — stats, insights, trends, and mileston
 
   * Graph comparing season trend
 
-  * AI comment (“You were strongest in 2nd half – 91% saves”)
+  * AI comment ("You were strongest in 2nd half – 91% saves")
 
 ---
 
@@ -2785,33 +2828,33 @@ Display everything about a single game — stats, insights, trends, and mileston
 
 ### **C) Team Contribution Ring**
 
-* Pie chart showing athlete’s % contribution to total team stats
+* Pie chart showing athlete's % contribution to total team stats
 
-  * “You accounted for 40% of team saves this game.”
+  * "You accounted for 40% of team saves this game."
 
 ---
 
 ## **🤖 4\. AI Insights (Smart Takeaways)**
 
-**Section Title:** “AI Coach Review”
+**Section Title:** "AI Coach Review"
 
 * Display 2–3 insights derived from player data, like:
 
-  * 📊 *Consistency*: “Save % rose from 75 → 88 between Q1–Q4.”
+  * 📊 *Consistency*: "Save % rose from 75 → 88 between Q1–Q4."
 
-  * ⚡ *Momentum*: “You started slow but finished strong.”
+  * ⚡ *Momentum*: "You started slow but finished strong."
 
-  * 🎯 *Focus Point*: “Clears under pressure dropped to 60% — practice quick resets.”
+  * 🎯 *Focus Point*: "Clears under pressure dropped to 60% — practice quick resets."
 
 **UI:**
 
 * Insight cards with gradient header (brand.primary → accent)
 
-* Each card \= title \+ summary \+ CTA:
+* Each card = title \+ summary \+ CTA:
 
-  * “Add to Drills” → Suggests relevant wall ball drill.
+  * "Add to Drills" → Suggests relevant wall ball drill.
 
-  * “Set Goal” → Opens goal creation pre-filled with target metric.
+  * "Set Goal" → Opens goal creation pre-filled with target metric.
 
 **Voice:** motivational, concise, data-aware.
 
@@ -2825,1229 +2868,10 @@ Display everything about a single game — stats, insights, trends, and mileston
 
 * Horizontal badge scroll
 
-  * Example: “The Wall 🧱 (15+ Saves)” earned
+  * Example: "The Wall 🧱 (15+ Saves)" earned
 
-  * “Clean Sheet” — 0 GA
+  * "Clean Sheet" — 0 GA
 
 * Each badge animates in with confetti and haptics.
 
-* Tap badge → modal with description \+ date earned.
-
-**Other milestone ideas:**
-
-* “Career 100 Saves”
-
-* “5 Game Streak”
-
-* “10-Game Club Appearance”
-
-**Microcopy:**
-
-“You just earned *The Wall* badge — keep building your legacy\!”
-
----
-
-## **💬 6\. Coach Feedback**
-
-**UI:**
-
-* Card with coach avatar \+ name \+ timestamp
-
-* Text: “Excellent focus 2nd half. Let’s improve low-angle reactions.”
-
-* Emoji bar: 👍🔥👏
-
-* If no feedback yet → placeholder:
-
-   “Waiting for coach feedback… tap to request review.”
-
-**Coach (verified) can:**
-
-* Leave comments
-
-* Attach stat highlights
-
-* Add video clip (future)
-
-* Approve drill unlocks directly here (for Skills sync)
-
----
-
-## **⚙️ 7\. Actions Bar**
-
-**At bottom (sticky):**
-
-* ✏️ **Edit Stats** (opens modal or navigates to Log Game)
-
-* 📤 **Share Summary** (generates PNG or PDF)
-
-* 🗑 **Delete Game** (with confirmation)
-
-* ⏱ **Replay Mode (coming soon)** — quick quarter-by-quarter recap
-
-**Share Output Example:**
-
-“📊 10 Saves | 3 Goals Allowed | 83% Save % — Duxbury beats Scituate 10-7  
- Tracked with StatLocker 🥍 \#YourStatsYourStoryYourFuture”
-
----
-
-## **🧠 Data Model (Firestore)**
-
-`users/{uid}/games/{gameId}`  
-  `opponent: "Scituate"`  
-  `date: 2025-04-10`  
-  `location: "Home"`  
-  `result: "win"`  
-  `teamScore: 10`  
-  `opponentScore: 7`  
-  `stats: {`  
-    `saves: 10,`  
-    `shotsFaced: 12,`  
-    `goalsAllowed: 2,`  
-    `clearsMade: 8,`  
-    `clearsAttempted: 9,`  
-    `...`  
-  `}`  
-  `derived: {`  
-    `savePct: 0.83,`  
-    `clearPct: 0.89,`  
-    `gaa: 4.0`  
-  `}`  
-  `quarterStats: [`  
-    `{ q:1, savePct:0.75, goals:1 },`  
-    `{ q:2, savePct:0.80, goals:1 },`  
-    `...`  
-  `]`  
-  `badgesEarned: ["badge_wall", "streak_5games"]`  
-  `coachFeedback: [`  
-    `{ id, coachId, text, createdAt }`  
-  `]`  
-  `aiInsights: [`  
-    `{ id, title, description, drillRef?, goalRef? }`  
-  `]`  
-  `createdAt, updatedAt`
-
----
-
-## **🧩 Components (Expo \+ NativeWind)**
-
-| Component | Purpose |
-| ----- | ----- |
-| `<GameHeader />` | Opponent, score, result, share button |
-| `<StatGrid />` | Position-based metric cards |
-| `<TrendGraph />` | Save%/Shot% trend line |
-| `<QuarterBreakdown />` | Bar per quarter |
-| `<AIInsightCard />` | AI coach takeaways |
-| `<BadgeScroll />` | Earned milestones |
-| `<CoachFeedbackCard />` | Feedback thread |
-| `<ActionsBar />` | Edit, share, delete |
-
----
-
-## **🎨 Design Tokens (same system)**
-
-| Token | Value |
-| ----- | ----- |
-| brand.primary | \#6366F1 |
-| brand.accent | \#10B981 |
-| ink.title | \#111827 |
-| ink.subtle | \#6B7280 |
-| success | \#22C55E |
-| danger | \#EF4444 |
-| card.bg | \#FFFFFF |
-| shadow.card | subtle elevation (NativeWind `shadow-md`) |
-
-**Typography:**
-
-* **Outfit 700** → Section titles (“AI Coach Review”)
-
-* **Inter Tight 600** → Stat values
-
-* **Inter Tight 400** → Meta text
-
----
-
-## **🪄 Motion & UX Polish**
-
-* Score header fades to “Result color” as user scrolls.
-
-* Stats count up on load.
-
-* Confetti \+ haptic pulse when showing new badges.
-
-* Graphs animate in with staggered transitions.
-
-* Pull-to-refresh reloads AI insights if updated.
-
----
-
-## **🔔 Notifications & Sync**
-
-* When coach adds feedback → athlete push: “New feedback for \[Opponent\].”
-
-* When AI generates new insight → in-app toast: “AI found a new performance pattern.”
-
----
-
-## **📊 Analytics**
-
-* `game_details_opened` { gameId, result }
-
-* `ai_insight_clicked` { id }
-
-* `badge_earned_viewed` { badgeId }
-
-* `coach_feedback_added`
-
-* `game_summary_shared` { format: 'png|pdf' }
-
----
-
-## **🚀 MVP Implementation Order**
-
-1️⃣ Header (Opponent, Score, Date)  
- 2️⃣ Stat Grid (position-based)  
- 3️⃣ AI Insights (basic cards)  
- 4️⃣ Coach Feedback (simple text)  
- 5️⃣ Share Summary (text image)
-
-Then layer:
-
-* Trend graphs
-
-* Badges \+ milestones
-
-* Advanced insights
-
----
-
-## **💬 Microcopy Highlights**
-
-* **Empty state:** “No stats logged yet — add them from your Dashboard.”
-
-* **AI tone:** “Strong finish — let’s keep this streak alive.”
-
-* **Badge pop:** “🏅 New Badge: The Wall — 15+ saves in one game\!”
-
-* **Coach note tip:** “Feedback helps you grow faster — request one if missing.”
-
-* **Share CTA:** “Turn your game into your highlight reel.”
-
-# Calendar/Notifications
-
-# **📆 Calendar & Notifications Revamp**
-
-“Stay locked in. Never miss a game, practice, or update.”
-
----
-
-## **🧱 HIGH-LEVEL GOAL**
-
-* Calendar \= **Planner** → all athlete events (games, practices, visits, playoffs)
-
-* Notifications \= **Pulse** → what matters, when it matters (AI alerts, coach feedback, badge unlocks, reminders)
-
-Both are surfaced via icons in the **top bar**, accessible on any tab.
-
----
-
-## **🔔 ICONS IN TOP BAR**
-
-**Placement:**  
- Right side of the nav bar (top-right cluster):
-
-`[Calendar Icon]   [Bell Icon]`
-
-**Behavior:**
-
-* Tap → opens slide-up modal or full screen (depending on context).
-
-* Long press (future) → quick actions (e.g., “Add Event”, “Mark All Read”).
-
-* Badges:
-
-  * Calendar: subtle dot if new event added by coach.
-
-  * Notifications: red dot with count bubble.
-
----
-
-# **🗓 CALENDAR ICON — “Your Season at a Glance”**
-
-## **🎯 Purpose**
-
-A fast, visual way to see your upcoming schedule across **Games, Practices, Scrimmages, College Visits, Playoffs, Recruiting Events** — synced directly to the Locker’s **Upcoming Games** section.
-
----
-
-## **🧩 DESIGN STRUCTURE**
-
-### **🧭 Top Bar Modal (Full-Screen)**
-
-**Header:**
-
-* Title: “My Calendar”
-
-* Buttons: \[+ Add Event\] | \[Filter Icon\]
-
-* Subtext: “Tap any event for details.”
-
-### **🗓 Month View**
-
-* Month grid (standard calendar view)
-
-* Dots under each date (color-coded by event type)
-
-  * Game \= Blue
-
-  * Practice \= Green
-
-  * Scrimmage \= Orange
-
-  * College Visit \= Purple
-
-  * Playoff \= Red
-
-  * Recruiting/Clinic \= Gold
-
-Tap a day → opens **Day Detail Sheet**.
-
----
-
-### **📅 Day Detail Sheet**
-
-**Header:**
-
-* “Wednesday, April 10”
-
-* Add Event button (+)
-
-**Event Cards List (chronological):**  
- Each event \= card with:
-
-* Time: `4:00 PM – 6:00 PM`
-
-* Title: `Duxbury vs Scituate`
-
-* Location: “Home Field”
-
-* Tag chip (Game, Practice, Visit, etc.)
-
-* Avatar icons (coach/team indicator)
-
-* Icon on right: 🏅 if stat-logged game / 🧠 if AI note linked
-
-**Tap → Event Detail Modal**
-
----
-
-### **📍 Event Detail Modal**
-
-**Layout:**
-
-* Header: event name \+ tag badge
-
-* Date \+ time
-
-* Location (tap → open Apple/Google Maps)
-
-* Description / Notes
-
-* Participants (optional)
-
-* Attachments (if coach shared PDF, etc.)
-
-* CTA row:
-
-  * 📝 Edit / Delete (if user-created)
-
-  * 🧩 “Link to Game Stats” (for completed games)
-
-  * 🔔 “Remind Me” toggle
-
-**Microcopy:**
-
-“Add reminders so you never miss warm-ups.”
-
----
-
-### **➕ Add Event Modal**
-
-**Fields:**
-
-* Event Type dropdown (Game, Practice, Scrimmage, Visit, Playoff, Recruiting Event, Other)
-
-* Title
-
-* Date / Time Picker
-
-* Location
-
-* Notes / Description
-
-* Toggle: “Add Reminder Notification” (15min, 1h, 1d before)
-
-* Optional: “Repeat” (weekly, monthly)
-
-* Save → event instantly shows on Locker upcoming list.
-
-**Coach Permissions:**
-
-* Coach-created events auto-sync to all linked athletes.
-
-* Athletes can add personal or recruiting events only (no team events).
-
----
-
-### **🖌 Visual Design**
-
-| Element | Font | Weight | Color |
-| ----- | ----- | ----- | ----- |
-| Month Header | Outfit 700 | 700 | brand.primary |
-| Date numbers | Inter Tight 500 | 500 | ink.title |
-| Event tags | Inter Tight 600 | 600 | color-coded |
-| Modal background | Surface/Base | \#FFFFFF |  |
-| Dots under dates | Accent colors (as above) |  |  |
-
-**Motion**
-
-* Swipe left/right → month change (spring animation)
-
-* Tap date → quick pulse highlight
-
-* Add event → confetti spark if it’s their first scheduled game
-
----
-
-### **🔄 Integration**
-
-* Locker Tab: pulls next 3 events from `calendar_events` collection.
-
-* AI Coach Tab: can read this to give time-based prompts like:
-
-   “You’ve got Scituate this weekend — want a pregame mindset checklist?”
-
-* Push reminders from Notifications engine.
-
----
-
-## **🗄 Firestore Schema**
-
-`users/{uid}/calendar_events/{eventId}`  
-  `title: "Duxbury vs Scituate"`  
-  `type: "game" | "practice" | "scrimmage" | "visit" | "playoff" | "recruiting"`  
-  `startAt: timestamp`  
-  `endAt: timestamp`  
-  `location: "Home Field"`  
-  `notes: "Bring alternate gloves"`  
-  `createdBy: uid | coachId`  
-  `reminder: { enabled: true, minutesBefore: 60 }`  
-  `linkedGameId?: gameId`  
-  `visibility: "private" | "team"`  
-  `color: "#3B82F6"`
-
-Coach → same schema under `teams/{teamId}/calendar_events/…` that auto-syncs to roster.
-
----
-
-# **🔔 NOTIFICATION BELL — “Stay in the Loop”**
-
-## **🎯 Purpose**
-
-Surface meaningful updates from across StatLocker — performance, coach feedback, achievements, AI insights, and schedule changes — all in one tidy feed.
-
----
-
-## **🧩 DESIGN STRUCTURE**
-
-### **🔔 Bell Icon**
-
-* Badge bubble \= unread count (max “9+”)
-
-* Tap → opens **Notifications Drawer**
-
----
-
-### **📲 Notifications Drawer (Bottom Sheet)**
-
-**Header:** “Notifications”
-
-* Tabs: **All | Unread | Mentions | Coach**
-
-* Button: “Mark All Read”
-
-**List Items (Grouped by Day):**  
- Each notification \= row with:
-
-* Icon (context)
-
-* Title \+ short message  
-   e.g.,  
-   **🏅 Badge Earned** – *You just unlocked “The Wall”*  
-   **📣 Coach Feedback** – *Erica: “Elite reflexes this weekend\!”*  
-   **📆 Event Added** – *Practice moved to 4:30 PM*  
-   **🤖 AI Insight** – *Save % improved \+8% last 3 games*
-
-* Timestamp (“2h ago”)
-
-* Tap → deep-links into relevant tab (Goals, Skills, Game Details, etc.)
-
-**Iconography (left):**
-
-| Type | Icon | Color |
-| ----- | ----- | ----- |
-| Game/Event | 📅 | brand.primary |
-| Coach Feedback | 🎓 | \#6366F1 |
-| Badge Earned | 🏅 | \#F59E0B |
-| AI Insight | 🤖 | \#10B981 |
-| Recruiting Update | 🎓 | \#8B5CF6 |
-| System | ⚙️ | \#6B7280 |
-
-**Unread behavior:** bold text \+ blue dot → clears on open.
-
----
-
-### **🧠 Smart Bundles**
-
-Notifications auto-group when related:
-
-“3 new badges earned this week.”  
- “2 drills approved by coach Erica.”
-
-Bundled cards expand on tap.
-
----
-
-### **⚙️ Settings (access via gear icon)**
-
-* Toggles for each category:
-
-  * Game / Practice updates
-
-  * Coach feedback
-
-  * AI insights
-
-  * Badge unlocks
-
-  * Recruiting tasks
-
-  * Marketing updates (off by default)
-
-* Option: “Quiet Hours” (no push between 10PM–7AM)
-
-* “Clear All Notifications” button (confirmation modal)
-
----
-
-### **🔄 Integration Logic**
-
-* Calendar events → trigger event reminders.
-
-* AI Insights → push summary when new analysis is ready.
-
-* Coach → message feedback → push “New Coach Feedback.”
-
-* Skills → drill approval → “Drill signed off by Coach.”
-
-* Recruiting → “College Visit in 2 days.”
-
-* Goals → “1 save away from ‘The Wall’ badge\!”
-
-**All these are written to:**
-
-`users/{uid}/notifications/{notifId}`  
-  `type: 'badge' | 'feedback' | 'event' | 'ai' | 'recruiting' | 'system'`  
-  `title: "New Badge Earned!"`  
-  `message: "You just earned The Wall 🧱"`  
-  `link: "app://goals/badges"`  
-  `read: false`  
-  `createdAt: timestamp`  
-  `icon: "🏅"`  
-  `color: "#F59E0B"`  
-  `sourceRef?: { type, id }`
-
----
-
-## **🪄 Motion & UX**
-
-* Subtle vibration \+ haptic feedback when receiving a live notification.
-
-* Drawer slides up from bottom (90% height).
-
-* Pull down to refresh.
-
-* Long press → Quick Actions: “Mark Read”, “Delete”, “Mute Type”.
-
-* Swiping right \= mark read, left \= delete.
-
----
-
-## **🎨 Design Tokens**
-
-| Element | Font | Weight | Color |
-| ----- | ----- | ----- | ----- |
-| Titles | Outfit 700 | 700 | ink.title |
-| Body | Inter Tight 400 | 400 | ink.subtle |
-| Icons | SF Symbols / Lucide | \- | contextual color |
-| Badge count | Inter Tight 700 | 700 | white text on brand.primary |
-
----
-
-## **💬 Microcopy Examples**
-
-**AI:** “Save % trending up — proud coach moment 🤖.”  
- **Coach:** “New feedback from Coach Erica on Game 10/15.”  
- **Calendar:** “Practice rescheduled to 6:00 PM — don’t forget your stick.”  
- **Badge:** “🔥 You’re now a Silver Tier Wall Baller.”  
- **System:** “Trial ends soon — upgrade for full AI insights.”
-
----
-
-## **🚀 MVP Implementation Order**
-
-1️⃣ **Calendar Modal (month \+ day list)**  
- 2️⃣ **Event Detail / Add Event**  
- 3️⃣ **Locker Upcoming Section auto-sync**  
- 4️⃣ **Notifications Drawer**  
- 5️⃣ **Push notifications (Expo Notifications \+ Firestore trigger)**  
- 6️⃣ **Filters \+ Quiet Hours (optional v2)**
-
----
-
-## **🔭 Nice-to-Haves**
-
-* **Coach Calendar Sync:** Coaches can push schedule changes to roster (auto notification).
-
-* **AI Prep Mode:** 24h pre-game → AI sends prep insight (“Opponent shoots low 60% of time”).
-
-* **Cross-tab badge:** Calendar icon pulses before big games / tournaments.
-
-* **Team Calendar View:** Team-level calendar shared by all members.
-
----
-
-## **✨ Summary Taglines**
-
-“Never miss a moment that builds your story.”  
- “Every rep, every reminder — right on time.”  
- “Your season, organized by StatLocker.”
-
-# FAB Modal
-
-# **🚀 FAB \+ Quick Actions \+ After Game Log Revamp**
-
-**Purpose:**  
- Make logging games intuitive, fast, and rewarding — while tying directly into AI Insights, Goals, and Badges.
-
----
-
-## **⚡ 1\. FAB (Floating Action Button)**
-
-### **🎨 Design Enhancements**
-
-* Keep it **bottom-right**, slightly lifted with soft shadow.
-
-* Animate on scroll (hide when scrolling down, reappear when scrolling up).
-
-* Pulsing glow when user hasn’t logged a game in 7+ days.
-
-**Style Example**
-
-`<View className="absolute bottom-6 right-6 shadow-lg">`  
-  `<TouchableOpacity`  
-    `onPress={handleOpenQuickActions}`  
-    `className="bg-brand-primary w-16 h-16 rounded-full flex items-center justify-center shadow-md active:scale-95"`  
-  `>`  
-    `<Icon name="plus" size={28} color="#fff" />`  
-  `</TouchableOpacity>`  
-`</View>`
-
-**Optional Animation:**  
- Use Reanimated \+ Moti:
-
-* Pulse from `scale(1)` → `scale(1.05)` → `scale(1)`
-
-* Glow ring color \= brand.accent (\#10B981)
-
-**Microcopy Tip:**  
- Tooltip (first launch):
-
-“Tap to log your next game or stat update.”
-
----
-
-## **⚙️ 2\. Quick Actions Sheet (Modal)**
-
-### **🎯 Goal**
-
-Turn the sheet into a **context-aware hub** that adapts to user state (day, game schedule, AI insights).
-
----
-
-### **🧭 Updated Layout**
-
-| Action | Icon | Function | Notes |
-| ----- | ----- | ----- | ----- |
-| **Log Game (After Game)** | 🏁 | Opens stat entry modal | Primary |
-| **Live Game Mode** | ⏱️ | Future | Keep ghosted with “Coming Soon” |
-| **Add Practice or Scrimmage** | 🏑 | Logs as practice event | Syncs to Calendar |
-| **Ask AI Coach** | 🤖 | Opens AI Coach modal prefilled with “Analyze last game” | Optional integration |
-| **Add Recruiting Update** | 🎓 | Opens recruiting milestone modal | Links to Recruiting tab |
-
----
-
-### **🪄 Smart Additions**
-
-* **Auto-Suggest Game:**  
-   If there’s an event today in the Calendar, prefill the opponent & date.
-
-* **Haptic Feedback:**  
-   Slight success tap when opening or performing an action.
-
-* **Gradient Handle:**  
-   Replace the gray handle bar with a brand gradient:  
-   `linear-gradient(90deg, #6366F1, #10B981)`
-
-* **Empty-State Copy:**
-
-   “Ready to make it count? Log your latest game or training session.”
-
----
-
-### **🔗 Integration**
-
-* When a game is logged → automatically push data to:
-
-  * Dashboard stat cards
-
-  * Goals progress
-
-  * Badge engine
-
-  * AI Insights queue
-
----
-
-## **🧾 3\. After Game Log Modal (GameLogModal)**
-
-### **🎨 UI Layout**
-
-**Step-based flow (3 slides max):**  
- 1️⃣ **Game Info**
-
-* Opponent, Location (Home/Away), Date
-
-* Score, Result (W/L)
-
-* Duration (optional)
-
-* Category: Game / Scrimmage / Practice
-
-2️⃣ **Performance Stats**
-
-* Position-specific metrics (auto from athlete profile)
-
-* \+/– buttons for each
-
-* Auto-calculated percentages
-
-* Visual feedback:  
-   “🟢 New personal best\!” / “⚠️ Below your season avg.”
-
-3️⃣ **Summary \+ AI Coach**
-
-* Summary card:
-
-  * Save %, Goals, Clears, TOs
-
-* AI insight preview:  
-   “You were strongest in Q3. Focus on clear timing for next game.”
-
-* Optional: “Add Coach Notes” field.
-
----
-
-### **✨ UX Polish**
-
-* **Top Stepper Bar:** `Game Info → Stats → Summary`
-
-* **Progressive Save:** Auto-save each step to local draft.
-
-* **Confetti \+ Sound** on Save if user hits new milestone (Save% \> 85, 10+ saves, etc.).
-
-* **AI Hook:** On save, trigger `ai_coach` insight:
-
-   “Based on your performance, here’s what to work on this week.”
-
----
-
-### **🧠 Data Flow**
-
-`users/{uid}/games/{gameId} {`  
-  `opponent: "Scituate",`  
-  `date: "2025-03-22",`  
-  `location: "Home",`  
-  `result: "W",`  
-  `score: "12-2",`  
-  `stats: {`  
-    `saves: 12,`  
-    `shotsFaced: 14,`  
-    `goalsAllowed: 2,`  
-    `clearsMade: 8,`  
-    `clearsAttempted: 9,`  
-    `groundBalls: 5,`  
-    `turnovers: 1,`  
-  `},`  
-  `derived: {`  
-    `savePct: 85.7,`  
-    `clearPct: 88.8,`  
-  `},`  
-  `tags: ["highschool"],`  
-  `createdAt,`  
-`}`
-
-**AI trigger:** write to `/ai_insights_queue/{uid}`
-
----
-
-### **🏆 Integration Hooks**
-
-| Destination | Trigger |
-| ----- | ----- |
-| Dashboard | Game Saved |
-| Stats Tab | Aggregate auto-update |
-| Goals Tab | Recalculate progress |
-| Badges | Award check (if threshold met) |
-| AI Coach | Generate post-game message |
-| Calendar | Mark game as “Completed” |
-
----
-
-### **🧩 Enhanced Actions Sheet Spec Summary**
-
-| Component | Upgrade |
-| ----- | ----- |
-| **FAB** | Pulse \+ Haptic \+ Auto-hide on scroll |
-| **QuickActionsSheet** | Context-aware, gradient handle, add “Ask AI Coach” |
-| **After Game Log** | Step-based modal, AI summary, confetti success |
-| **Integration** | Sync to all tabs \+ badge unlock triggers |
-
----
-
-## **🪄 Example Microcopy**
-
-**FAB Tooltip:**
-
-“Tap to log your next game.”
-
-**After Save (Toast):**
-
-“Game logged successfully\! AI Coach is analyzing your performance…”
-
-**AI Insight Result (next login):**
-
-“You saved 85% of shots last game — your best yet. Focus on clears under pressure this week.”
-
-# Settings/Drawer Menu
-
-# **⚙️ Settings Tab & Drawer Menu Revamp**
-
-**Mission:** Make it the athlete’s control center — sleek, smart, and proudly StatLocker.
-
----
-
-## **🧱 STRUCTURE OVERVIEW**
-
-### **1️⃣ Drawer Menu (Quick Access)**
-
-### **2️⃣ Settings Tab (Full Control Center)**
-
----
-
-# **🧭 DRAWER MENU — “Your Locker Controls”**
-
-**Goal:**  
- Turn the current Drawer from a flat list into a personalized quick hub that’s dynamic, visual, and value-driven.
-
----
-
-## **🎨 DESIGN LAYOUT (Top → Bottom)**
-
-### **🧍‍♂️ User Profile Header**
-
-At the very top of the drawer:
-
-* Circular avatar
-
-* Name, Grad Year, Position
-
-* Team toggle (HS / Club)
-
-* “View Full Profile →” (navigates to Profile tab)
-
-**Visual Design:**
-
-`<View className="p-4 flex-row items-center border-b border-slate-200">`  
-  `<Image source={{uri: avatarUrl}} className="w-12 h-12 rounded-full mr-3" />`  
-  `<View>`  
-    `<Text className="font-outfit-bold text-lg text-ink-title">{userName}</Text>`  
-    `<Text className="text-ink-subtle text-sm">{gradYear} • {position}</Text>`  
-  `</View>`  
-`</View>`
-
----
-
-### **🔖 Navigation Section**
-
-Visually grouped by category with section headers and subtle icons:
-
-**🏠 My Locker**
-
-* Dashboard
-
-* Stats
-
-* Skills
-
-* Goals
-
-* Recruiting
-
-* AI Coach
-
-**👥 Team & Communication**
-
-* Messages
-
-* Calendar
-
-* Coach Announcements
-
-**🧩 Account & Settings**
-
-* Settings
-
-* Subscription Plan
-
-* Support / Help Center
-
-**🚪 Sign Out Button**
-
-* Fixed to bottom, red or muted gray with “Log Out” label and icon.
-
-**Microcopy example:**
-
-“Logging out? Don’t worry — your stats are always saved.”
-
----
-
-### **🧾 Subscription Badge**
-
-Under “My Locker” section:
-
-“Pro Plan — renews May 12, 2025”
-
-* Colored badge (brand.accent if Pro, silver gradient if Elite)
-
-* Tap → opens Paywall / RevenueCat subscription screen.
-
----
-
-### **🔢 App Version Footer**
-
-Bottom corner (tiny text):
-
-“v1.2.4 • StatLocker Labs © 2025”
-
-If Beta version → add label:
-
-“Beta Build – Feedback Welcome 🧠”
-
----
-
-### **🪄 Drawer Motion/UX Enhancements**
-
-* Slide-in with **3D blur** background.
-
-* Gradient header → `linear-gradient(180deg, #6366F1, #10B981)`
-
-* Drawer handle → “Your Locker” label when opened.
-
-* **Haptic tap** when opening.
-
----
-
-# **⚙️ SETTINGS TAB — “Control Center”**
-
-**Goal:**  
- Empower the athlete to customize their app experience — theme, privacy, subscription, notifications, and integrations — all organized into clean sections.
-
----
-
-## **🎨 HEADER**
-
-* Title: “Settings” (Outfit\_700, 28px)
-
-* Subtitle: “Customize how you run your Locker.”
-
-* Background gradient header with the StatLocker logo faintly watermarked.
-
----
-
-## **🧭 SECTIONS OVERVIEW**
-
-### **1️⃣ Account**
-
-* Edit Profile → deep link to Profile Tab
-
-* Change Email / Password (if email login)
-
-* Manage Devices (view logged-in sessions)
-
-* Delete Account (soft warning modal)
-
----
-
-### **2️⃣ Subscription**
-
-* Plan Card (Pro / Elite / Trial)
-
-  * Icon \+ title (“Pro Plan”)
-
-  * Description: “Full AI insights, badges, recruiting tools”
-
-  * Renewal date
-
-  * Button: “Manage Subscription” (links to RevenueCat)
-
-* Upgrade CTA:
-
-   “Want advanced AI breakdowns? Go Elite 🚀”
-
-* Payment status (active / expired / trial days left)
-
----
-
-### **3️⃣ Notifications**
-
-* Toggles (all with haptics):
-
-  * Game reminders
-
-  * Coach messages
-
-  * Badge unlocks
-
-  * AI insights
-
-  * Promotional content (off by default)
-
-* Quiet Hours (select time range)
-
-* Preview Example:
-
-   “Example: ‘You’re 1 save away from The Wall 🧱’”
-
----
-
-### **4️⃣ Privacy & Sharing**
-
-* Toggle: “Public Profile”
-
-* Toggle: “Allow Coaches to view stats”
-
-* “Share Player Card” → opens share modal
-
-* “Manage Linked Coaches” → connected accounts
-
-* Optional: “Hide my name in team leaderboards”
-
----
-
-### **5️⃣ Appearance**
-
-* Theme toggle: Light / Dark / System
-
-* Accent color selector (future): Purple, Blue, Green
-
-* Font size: Small / Default / Large (NativeWind variant)
-
----
-
-### **6️⃣ Integrations**
-
-* Apple Health / Google Fit (future training data)
-
-* Calendar Sync (pulls team schedule)
-
-* Push notification management (Expo)
-
----
-
-### **7️⃣ Support & Feedback**
-
-* Help Center → opens webview (`support.statlocker.app`)
-
-* FAQ → quick list inside modal
-
-* Report a Bug → opens email template (`support@statlocker.com`)
-
-* “Give Feedback” → opens modal:
-
-   “We read every message. What can we improve?”
-
----
-
-### **8️⃣ About**
-
-* Version: `v1.2.4`
-
-* Terms of Service
-
-* Privacy Policy
-
-* Credits (Erica Brothers, Darien Brothers)
-
-* Build environment label: “Production” or “Sandbox”
-
----
-
-### **9️⃣ Sign Out**
-
-Bottom section (sticky).
-
-* Icon: 🚪
-
-* Label: “Sign Out”
-
-* Confirm modal:
-
-   “Are you sure you want to sign out?”  
-   \[Cancel\] \[Sign Out\]
-
-* Short haptic \+ toast: “Signed out successfully.”
-
----
-
-## **🎨 VISUAL DESIGN TOKENS**
-
-| Element | Font | Weight | Color |
-| ----- | ----- | ----- | ----- |
-| Headers | Outfit | 700 | `#111827` |
-| Body text | Inter Tight | 400–500 | `#6B7280` |
-| Card background | `#FFFFFF` (light) / `#1F2937` (dark) |  |  |
-| Accent | `#10B981` |  |  |
-| Divider | `#E5E7EB` |  |  |
-
-**Card Style:** rounded-xl, subtle shadow (`shadow-card`), ripple effect on tap.
-
----
-
-## **🧠 Microcopy Library**
-
-| Context | Text |
-| ----- | ----- |
-| Empty subscription | “You’re on the Free Plan. Unlock Pro for full AI insights.” |
-| Sign out | “Logging out? We’ll keep your progress safe.” |
-| Version footer | “Built by athletes, for athletes.” |
-| Privacy toggle | “Control how others see your Locker.” |
-| Feedback | “Your feedback fuels future updates.” |
-
----
-
-## **⚡ Functional Hooks**
-
-**onSignOut →**
-
-`await auth.signOut();`  
-`showToast("Signed out successfully 👋");`  
-`navigation.replace("WelcomeScreen");`
-
-**Manage Subscription →**  
- Opens RevenueCat customer portal (sandbox or prod based on env).
-
-**Sync Calendar →**  
- Pulls team and user events into Firestore `/calendar_events/`.
-
-**Notification Settings →**  
- Writes to `/users/{uid}/preferences/notifications`.
-
----
-
-## **🧩 COMPONENT CHECKLIST**
-
-| Component | Purpose |
-| ----- | ----- |
-| `<SettingsHeader />` | Gradient title section |
-| `<SettingsSection />` | Reusable group container |
-| `<ToggleRow />` | For on/off controls |
-| `<PlanCard />` | Subscription overview |
-| `<SupportCard />` | Feedback & links |
-| `<AboutCard />` | Version info & legal links |
-
----
-
-## **🔔 Drawer \+ Settings Integration**
-
-When user taps “Settings” in Drawer:
-
-* Drawer closes smoothly → navigates to `/settings`
-
-* Background blur transitions → gives that premium polish
-
-* Drawer shows current plan & version dynamically:
-
-  * “Pro • v1.2.4”
-
-  * “Elite • v2.0 Beta” (if on testflight)
-
----
-
-## **✨ Future Enhancements**
-
-✅ **Coach/Parent Mode Switcher**
-
-“Switch to Coach View” (for multi-role users)
-
-✅ **Team Management Section (Coach accounts)**
-
-“Invite Players” / “Create Practice Schedule”
-
-✅ **Data Export (Pro/Elite)**
-
-Export season stats as PDF/CSV
-
-✅ **Feedback Rewards System**
-
-Earn “Community Helper” badge for sending suggestions.
-
----
-
-## **💬 Brand Voice (consistent across Drawer \+ Settings)**
-
-“We built StatLocker for athletes who care about their growth.”  
- “Own your game. Control your journey.”  
- “Your data. Your story. Your future.”
-
----
-
-## **🚀 MVP ORDER**
-
-1️⃣ Drawer Menu redesign (profile header, grouped nav, sign out, version footer)  
- 2️⃣ Settings tab sections:
-
-* Account
-
-* Subscription
-
-* Notifications
-
-* Privacy
-
-* Support  
-   3️⃣ Wire up Sign Out \+ Version info dynamically  
-   4️⃣ Add “Manage Subscription” via RevenueCat  
-   5️⃣ Theme toggle & public profile controls
-
+* Tap badge → modal with description \+ date

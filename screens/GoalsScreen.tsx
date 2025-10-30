@@ -1,129 +1,107 @@
-import React from 'react';
-import { View, Text, ScrollView, StyleSheet } from 'react-native';
+import React, { useMemo, useState } from 'react';
+import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 import TopNavBar from '../components/TopNavBar';
+import SectionHeader from '../components/SectionHeader';
 import GoalCard from '../components/GoalCard';
-import BadgeCard from '../components/goals/BadgeCard';
 import CompletedGoalItem from '../components/goals/CompletedGoalItem';
-import type { Goal, Badge } from '../types';
+import { useGoals } from '../contexts/goals';
+import ProgressRing from '../components/goals/ProgressRing';
+import BadgesGrid from '../components/goals/BadgesGrid';
+import GoalEditorModal from '../components/goals/GoalEditorModal';
+import type { Goal } from '../types';
 
-const mockCurrentGoals: Goal[] = [
-  {
-    id: 'g1',
-    icon: 'target',
-    iconBgColor: 'purple',
-    title: '80% Save Percentage',
-    target: '80%',
-    currentValue: 'Current: 78.5%',
-    progress: 98,
-    status: 'On Track',
-  },
-  {
-    id: 'g2',
-    icon: 'shield',
-    iconBgColor: 'green',
-    title: '200 Total Saves',
-    target: '200',
-    currentValue: 'Current: 142 saves',
-    progress: 71,
-    status: 'Ahead',
-  },
-];
-
-const mockCompletedGoals: Goal[] = [
-  {
-    id: 'g3',
-    icon: 'clear',
-    iconBgColor: 'blue',
-    title: '85% Clear Success',
-    target: '85%',
-    currentValue: 'Achieved: 85%',
-    progress: 100,
-    status: 'Achieved!',
-  },
-  {
-    id: 'g4',
-    icon: 'turnovers',
-    iconBgColor: 'red',
-    title: 'Sub-1 Turnover/Game',
-    target: '1.0',
-    currentValue: 'Achieved: 0.8',
-    progress: 100,
-    status: 'Achieved!',
-  },
-];
-
-const mockBadges: Badge[] = [
-  {
-    id: 'b1',
-    icon: 'fire',
-    title: 'Hot Streak',
-    description: '5 consecutive games with 75%+ save percentage.',
-    isEarned: true,
-  },
-  {
-    id: 'b2',
-    icon: 'shield',
-    title: 'The Wall',
-    description: 'Record 15+ saves in a single game.',
-    isEarned: true,
-  },
-  {
-    id: 'b3',
-    icon: 'target',
-    title: 'Perfect Game',
-    description: 'Achieve a 100% save percentage in a game.',
-    isEarned: false,
-  },
-  {
-    id: 'b4',
-    icon: 'clear',
-    title: 'Outlet Master',
-    description: 'Achieve a 100% clear rate in a game.',
-    isEarned: true,
-  },
-];
-
-const SectionHeader: React.FC<{ title: string }> = ({ title }) => (
-  <Text style={styles.sectionHeader}>{title}</Text>
-);
+// using shared SectionHeader component
 
 const GoalsScreen: React.FC = () => {
+  const { goals, toggleComplete, deleteGoal } = useGoals();
+  const [editorOpen, setEditorOpen] = useState(false);
+  const [editingGoal, setEditingGoal] = useState<any | null>(null);
+
+  const currentGoals = useMemo<Goal[]>(() => {
+    return goals
+      .filter(g => !g.completed)
+      .map(g => ({
+        id: g.id,
+        icon: (g.icon ?? 'target') as any,
+        iconBgColor: (g.accent ?? 'purple') as any,
+        title: g.title,
+        target: g.units === '%' ? `${g.targetValue}%` : String(g.targetValue),
+        currentValue: g.units === '%' ? `Current: ${g.currentValue}%` : `Current: ${g.currentValue}`,
+        progress: Math.round(g.progressPct),
+        status: g.status === 'ahead' ? 'Ahead' : g.status === 'completed' ? 'Achieved!' : 'On Track',
+      }));
+  }, [goals]);
+
+  const completedGoals = useMemo<Goal[]>(() => {
+    return goals
+      .filter(g => g.completed)
+      .map(g => ({
+        id: g.id,
+        icon: (g.icon ?? 'target') as any,
+        iconBgColor: (g.accent ?? 'green') as any,
+        title: g.title,
+        target: g.units === '%' ? `${g.targetValue}%` : String(g.targetValue),
+        currentValue: g.units === '%' ? `Achieved: ${g.currentValue}%` : `Achieved: ${g.currentValue}`,
+        progress: 100,
+        status: 'Achieved!',
+      }));
+  }, [goals]);
+
+  const onAdd = () => {
+    setEditingGoal(null);
+    setEditorOpen(true);
+  };
+
+  const onEdit = (id: string) => {
+    const g = goals.find(x => x.id === id) || null;
+    setEditingGoal(g);
+    setEditorOpen(true);
+  };
+
   return (
     <View style={styles.container}>
-      <TopNavBar firstName="Alex" />
+      <TopNavBar firstName="Erica" />
       <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
         <View style={styles.content}>
           <Text style={styles.title}>My Goals</Text>
           <Text style={styles.subtitle}>Track your progress and celebrate your achievements.</Text>
         </View>
 
+        <ProgressRing />
+
         <View style={styles.content}>
-          <SectionHeader title="Current Goals" />
+          <SectionHeader
+            title="Current Goals"
+            rightElement={<TouchableOpacity onPress={onAdd} style={styles.addButton}><Text style={styles.addButtonText}>+ Add Goal</Text></TouchableOpacity>}
+          />
           <View style={styles.goalsList}>
-            {mockCurrentGoals.map((goal) => (
-              <GoalCard key={goal.id} {...goal} />
+            {currentGoals.map((goal) => (
+              <TouchableOpacity key={goal.id} onLongPress={() => onEdit(goal.id)}>
+                <GoalCard {...goal} />
+                <View style={styles.rowActions}>
+                  <TouchableOpacity onPress={() => toggleComplete(goal.id)}><Text style={styles.action}>Complete</Text></TouchableOpacity>
+                  <TouchableOpacity onPress={() => deleteGoal(goal.id)}><Text style={styles.actionDanger}>Delete</Text></TouchableOpacity>
+                </View>
+              </TouchableOpacity>
             ))}
           </View>
         </View>
 
         <View style={styles.content}>
           <SectionHeader title="Badges" />
-          <View style={styles.badgesGrid}>
-            {mockBadges.map((badge) => (
-              <BadgeCard key={badge.id} badge={badge} />
-            ))}
-          </View>
+          <BadgesGrid />
         </View>
 
         <View style={styles.content}>
           <SectionHeader title="Completed Goals" />
           <View style={styles.goalsList}>
-            {mockCompletedGoals.map((goal) => (
+            {completedGoals.map((goal) => (
               <CompletedGoalItem key={goal.id} goal={goal} />
             ))}
           </View>
         </View>
       </ScrollView>
+      <GoalEditorModal visible={editorOpen} onClose={() => setEditorOpen(false)} editing={editingGoal} />
     </View>
   );
 };
@@ -158,11 +136,31 @@ const styles = StyleSheet.create({
   goalsList: {
     gap: 12,
   },
-  badgesGrid: {
+  addButton: {
+    alignSelf: 'flex-start',
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    backgroundColor: '#6366F1',
+    borderRadius: 12,
+    marginBottom: 12,
+  },
+  addButtonText: {
+    color: '#FFFFFF',
+    fontWeight: '700',
+  },
+  rowActions: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-end',
     gap: 16,
+    marginTop: 6,
+  },
+  action: {
+    color: '#10B981',
+    fontWeight: '600',
+  },
+  actionDanger: {
+    color: '#EF4444',
+    fontWeight: '600',
   },
 });
 

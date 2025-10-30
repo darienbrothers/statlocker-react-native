@@ -10,6 +10,21 @@ interface ChatMessageProps {
 const ChatMessageBubble: React.FC<ChatMessageProps> = ({ message }) => {
   const isUser = message.sender === 'user';
 
+  const renderAssistantContent = () => {
+    if (!message.type) {
+      return <Text style={styles.text}>{message.text}</Text>;
+    }
+    // simple card variants for MVP
+    return (
+      <View style={styles.card}>
+        <Text style={styles.cardTitle}>
+          {message.type === 'stat' ? 'Stat Breakdown' : message.type === 'drill' ? 'Drill Recommendation' : message.type === 'goal' ? 'Goal Progress' : 'Coach Note'}
+        </Text>
+        <Text style={styles.cardBody}>{message.text}</Text>
+      </View>
+    );
+  };
+
   return (
     <View style={[styles.container, isUser && styles.containerRight]}>
       {!isUser && (
@@ -18,7 +33,7 @@ const ChatMessageBubble: React.FC<ChatMessageProps> = ({ message }) => {
         </View>
       )}
       <View style={[styles.bubble, isUser ? styles.userBubble : styles.aiBubble]}>
-        <Text style={[styles.text, isUser && styles.userText]}>{message.text}</Text>
+        {isUser ? <Text style={[styles.text, styles.userText]}>{message.text}</Text> : renderAssistantContent()}
       </View>
     </View>
   );
@@ -66,6 +81,23 @@ const styles = StyleSheet.create({
   },
   userText: {
     color: '#FFFFFF',
+  },
+  card: {
+    backgroundColor: '#F9FAFB',
+    borderWidth: 1,
+    borderColor: '#E5E7EB',
+    borderRadius: 12,
+    padding: 10,
+  },
+  cardTitle: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: '#111827',
+    marginBottom: 6,
+  },
+  cardBody: {
+    fontSize: 13,
+    color: '#374151',
   },
 });
 

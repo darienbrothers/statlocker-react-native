@@ -1,25 +1,29 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, Modal, StyleSheet, ScrollView } from 'react-native';
-import type { Drill } from '../../types';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, Modal, StyleSheet, ScrollView, TextInput } from 'react-native';
+import type { WallBallDrill } from '../../types';
 import { Icon } from '../Icon';
-import { WebView } from 'react-native-webview';
 
 interface DrillInProgressModalProps {
-  drill: Drill;
+  drill: WallBallDrill;
   onClose: () => void;
+  onComplete?: (drillId: string, reps: number) => void;
+  currentReps?: number;
 }
 
-const DrillInProgressModal: React.FC<DrillInProgressModalProps> = ({ drill, onClose }) => {
-  // Extract YouTube video ID if it's a YouTube URL
-  const getVideoUrl = () => {
-    if (!drill.videoUrl) return null;
-    // Simple YouTube URL parsing - in production, you'd want more robust parsing
-    const match = drill.videoUrl.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/);
-    if (match && match[1]) {
-      return `https://www.youtube.com/embed/${match[1]}`;
+const DrillInProgressModal: React.FC<DrillInProgressModalProps> = ({ drill, onClose, onComplete, currentReps = 0 }) => {
+  const [reps, setReps] = useState(currentReps.toString());
+
+  const handleSave = () => {
+    const repsNum = parseInt(reps, 10) || 0;
+    if (onComplete) {
+      onComplete(drill.id, repsNum);
+    } else {
+      onClose();
     }
-    return drill.videoUrl;
   };
+
+  const repsNum = parseInt(reps, 10) || 0;
+  const isTargetMet = repsNum >= drill.targetReps;
 
   return (
     <Modal
@@ -38,33 +42,62 @@ const DrillInProgressModal: React.FC<DrillInProgressModalProps> = ({ drill, onCl
           </View>
 
           <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
-            {getVideoUrl() ? (
-              <View style={styles.videoContainer}>
-                <WebView
-                  source={{ uri: getVideoUrl() || '' }}
-                  style={styles.video}
-                  javaScriptEnabled
-                  domStorageEnabled
-                />
+            <View style={styles.infoCard}>
+              <View style={styles.infoRow}>
+                <Text style={styles.infoLabel}>Tier:</Text>
+                <Text style={styles.infoValue}>{drill.tier}</Text>
               </View>
-            ) : (
-              <View style={styles.noVideo}>
-                <Text style={styles.noVideoText}>No video available for this drill.</Text>
+              <View style={styles.infoRow}>
+                <Text style={styles.infoLabel}>Type:</Text>
+                <Text style={styles.infoValue}>{drill.type}</Text>
+              </View>
+              <View style={styles.infoRow}>
+                <Text style={styles.infoLabel}>Target Reps:</Text>
+                <Text style={styles.infoValue}>{drill.targetReps}</Text>
+              </View>
+              <View style={styles.infoRow}>
+                <Text style={styles.infoLabel}>Est. Time:</Text>
+                <Text style={styles.infoValue}>{drill.estTimeMin} min</Text>
+              </View>
+            </View>
+
+            {drill.description && (
+              <View style={styles.instructions}>
+                <Text style={styles.instructionsTitle}>Description:</Text>
+                <Text style={styles.instructionsText}>{drill.description}</Text>
               </View>
             )}
 
-            <View style={styles.instructions}>
-              <Text style={styles.instructionsTitle}>Instructions:</Text>
-              <Text style={styles.instructionsText}>
-                Follow the instructions in the video to complete the drill. Focus on proper form and technique.
-                Repeat as necessary to build muscle memory.
-              </Text>
+            <View style={styles.repsSection}>
+              <Text style={styles.repsLabel}>Log Your Reps:</Text>
+              <View style={styles.repsInputContainer}>
+                <TextInput
+                  style={styles.repsInput}
+                  value={reps}
+                  onChangeText={setReps}
+                  placeholder="0"
+                  keyboardType="number-pad"
+                  autoFocus
+                />
+                <Text style={styles.repsUnit}>reps</Text>
+              </View>
+              {currentReps > 0 && (
+                <Text style={styles.currentReps}>Previous: {currentReps} reps</Text>
+              )}
+              {repsNum >= drill.targetReps && (
+                <View style={styles.successBadge}>
+                  <Icon name="check" size={16} color="#10B981" />
+                  <Text style={styles.successText}>Target achieved!</Text>
+                </View>
+              )}
             </View>
           </ScrollView>
 
           <View style={styles.footer}>
-            <TouchableOpacity onPress={onClose} style={styles.finishButton} activeOpacity={0.8}>
-              <Text style={styles.finishButtonText}>Finish Drill</Text>
+            <TouchableOpacity onPress={handleSave} style={styles.finishButton} activeOpacity={0.8}>
+              <Text style={styles.finishButtonText}>
+                {isTargetMet ? 'Complete & Save' : 'Save Progress'}
+              </Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -161,6 +194,77 @@ const styles = StyleSheet.create({
   finishButtonText: {
     color: '#FFFFFF',
     fontWeight: '700',
+  },
+  infoCard: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 16,
+  },
+  infoRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 8,
+  },
+  infoLabel: {
+    fontSize: 14,
+    color: '#6B7280',
+    fontWeight: '500',
+  },
+  infoValue: {
+    fontSize: 14,
+    color: '#1D2333',
+    fontWeight: '600',
+  },
+  repsSection: {
+    marginTop: 8,
+  },
+  repsLabel: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#1D2333',
+    marginBottom: 12,
+  },
+  repsInputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 8,
+  },
+  repsInput: {
+    flex: 1,
+    fontSize: 32,
+    fontWeight: '700',
+    color: '#1D2333',
+    textAlign: 'center',
+  },
+  repsUnit: {
+    fontSize: 16,
+    color: '#6B7280',
+    marginLeft: 8,
+  },
+  currentReps: {
+    fontSize: 12,
+    color: '#6B7280',
+    textAlign: 'center',
+    marginTop: 4,
+  },
+  successBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#D1FAE5',
+    padding: 12,
+    borderRadius: 8,
+    marginTop: 8,
+  },
+  successText: {
+    fontSize: 14,
+    color: '#065F46',
+    fontWeight: '600',
+    marginLeft: 8,
   },
 });
 

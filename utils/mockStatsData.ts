@@ -302,3 +302,23 @@ export function getQuarterBreakdown() {
   });
 }
 
+// --- Helpers for Game Details screen (MVP + Trend Graphs) ---
+
+export function getGameById(gameId: string): Game | undefined {
+  return mockGames.find(g => g.id === gameId);
+}
+
+export function getLatestGame(): Game | undefined {
+  // mockGames are in ascending date order; latest is last
+  return mockGames[mockGames.length - 1];
+}
+
+export function getTrendForMetric(metricKey: 'save_pct' | 'gaa' | 'clear_pct', position: Position): ChartDataPoint[] {
+  return getChartDataForMetric(metricKey, position);
+}
+
+export function getQuarterStats(gameId: string): QuarterStats[] {
+  const game = getGameById(gameId);
+  return game?.quarterStats || [];
+}
+

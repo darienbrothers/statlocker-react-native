@@ -10,6 +10,7 @@ import PositionMetricsGrid from '../components/stats/PositionMetricsGrid';
 import AiInsightsCarousel from '../components/stats/AiInsightsCarousel';
 import ExportModal from '../components/stats/ExportModal';
 import ComparisonToggle from '../components/stats/ComparisonToggle';
+import SectionHeader from '../components/SectionHeader';
 import Fab from '../components/Fab';
 import { Icon } from '../components/Icon';
 import type { TimeRange, Position } from '../types';
@@ -76,14 +77,10 @@ const StatsScreen: React.FC = () => {
         </View>
 
         <View style={styles.content}>
-          <View style={styles.sectionHeader}>
-            <Text style={styles.sectionTitle}>Visual Analytics</Text>
-            <ComparisonToggle
-              mode={comparisonMode}
-              onModeChange={setComparisonMode}
-              disabled={comparisonMode === 'Team Avg'}
-            />
-          </View>
+          <SectionHeader
+            title="Visual Analytics"
+            rightElement={<ComparisonToggle mode={comparisonMode} onModeChange={setComparisonMode} disabled={comparisonMode === 'Team Avg'} />}
+          />
 
           <ChartCard title="Save Percentage" currentStat={`${latestSavePct.toFixed(1)}%`} statChange="+9% Last 30d">
             <LineChart data={savePercentageData} />

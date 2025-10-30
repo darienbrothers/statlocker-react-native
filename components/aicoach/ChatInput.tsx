@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import { View, TextInput, TouchableOpacity, StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
+import { View, TextInput, TouchableOpacity, StyleSheet, KeyboardAvoidingView, Platform, Text, ScrollView } from 'react-native';
 import { Icon } from '../Icon';
 
 interface ChatInputProps {
   onSend: (text: string) => void;
   isLoading: boolean;
+  quickActions?: string[];
 }
 
-const ChatInput: React.FC<ChatInputProps> = ({ onSend, isLoading }) => {
+const ChatInput: React.FC<ChatInputProps> = ({ onSend, isLoading, quickActions }) => {
   const [text, setText] = useState('');
 
   const handleSubmit = () => {
@@ -23,6 +24,22 @@ const ChatInput: React.FC<ChatInputProps> = ({ onSend, isLoading }) => {
       keyboardVerticalOffset={Platform.OS === 'ios' ? 90 : 0}
     >
       <View style={styles.container}>
+        {!!quickActions && quickActions.length > 0 && (
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.qScroll}>
+            <View style={styles.qRow}>
+              {quickActions.map((qa) => (
+                <TouchableOpacity
+                  key={qa}
+                  onPress={() => onSend(qa)}
+                  style={styles.qChip}
+                  activeOpacity={0.8}
+                >
+                  <Text style={styles.qText}>{qa}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </ScrollView>
+        )}
         <TextInput
           value={text}
           onChangeText={setText}
@@ -48,9 +65,29 @@ const ChatInput: React.FC<ChatInputProps> = ({ onSend, isLoading }) => {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: 'column',
     gap: 8,
+  },
+  qScroll: {
+    paddingBottom: 4,
+    paddingHorizontal: 0,
+  },
+  qRow: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  qChip: {
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    backgroundColor: '#FFFFFF',
+    borderWidth: 1,
+    borderColor: '#E5E7EB',
+    borderRadius: 999,
+  },
+  qText: {
+    fontSize: 12,
+    fontWeight: '600',
+    color: '#1D2333',
   },
   input: {
     flex: 1,

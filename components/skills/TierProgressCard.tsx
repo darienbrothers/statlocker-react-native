@@ -1,8 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import type { Tier } from '../../types';
 
 interface TierProgressCardProps {
-  tier: 'Foundation' | 'Advanced' | 'Elite';
+  tier: Tier;
   progress: number;
   completed: number;
   total: number;

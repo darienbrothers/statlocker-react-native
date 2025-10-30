@@ -1,14 +1,13 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-
-type Tier = 'Foundation' | 'Advanced' | 'Elite';
+import type { Tier } from '../../types';
 
 interface TierSelectorProps {
   selectedTier: Tier;
   onSelectTier: (tier: Tier) => void;
 }
 
-const tiers: Tier[] = ['Foundation', 'Advanced', 'Elite'];
+const tiers: Tier[] = ['Bronze', 'Silver', 'Gold', 'Platinum'];
 
 const TierSelector: React.FC<TierSelectorProps> = ({ selectedTier, onSelectTier }) => {
   return (

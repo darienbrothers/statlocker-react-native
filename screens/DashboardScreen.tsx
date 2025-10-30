@@ -6,6 +6,7 @@ import MetricCard from '../components/MetricCard';
 import AiInsightCard from '../components/AiInsightCard';
 import RecentGamesList from '../components/RecentGamesList';
 import HeroCard from '../components/HeroCard';
+import SectionHeader from '../components/SectionHeader';
 import HotStreakCard from '../components/HotStreakCard';
 import GoalCard from '../components/GoalCard';
 import UpcomingGamesList from '../components/UpcomingGamesList';
@@ -105,22 +106,7 @@ const clubData = {
   heroStats: { savePercentage: 82.1, totalSaves: 98, gamesPlayed: 10, wins: 9, losses: 1 }
 };
 
-interface SectionHeaderProps {
-  title: string;
-  actionText?: string;
-  onActionClick?: () => void;
-}
-
-const SectionHeader: React.FC<SectionHeaderProps> = ({ title, actionText, onActionClick }) => (
-  <View style={styles.sectionHeader}>
-    <Text style={styles.sectionTitle}>{title}</Text>
-    {actionText && onActionClick && (
-      <TouchableOpacity onPress={onActionClick}>
-        <Text style={styles.sectionAction}>{actionText}</Text>
-      </TouchableOpacity>
-    )}
-  </View>
-);
+// using shared SectionHeader component
 
 interface DashboardScreenProps {
   onGameSelect: (game: Game) => void;

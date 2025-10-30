@@ -228,3 +228,38 @@ export const simulateApiDelay = (ms: number = 1000): Promise<void> => {
   return new Promise(resolve => setTimeout(resolve, ms));
 };
 
+// Lightweight respond API for AI Coach MVP
+export async function respond(prompt: string, options?: { tone?: string; context?: Record<string, unknown> }) {
+  // simulate latency
+  await simulateApiDelay(800 + Math.random() * 400);
+  return generateMockChatResponse(prompt);
+}
+
+// Mock insights feed for the AI Coach carousel
+export async function getInsights() {
+  await simulateApiDelay(500);
+  return [
+    {
+      id: 'insight-1',
+      type: 'trend',
+      title: 'Momentum Meter',
+      description: "Save % up +9% this month. Strongest vs top opponents.",
+      createdAt: new Date().toISOString(),
+    },
+    {
+      id: 'insight-2',
+      type: 'focus',
+      title: 'Focus Area',
+      description: 'Low-left reactions dropped to 70%. Try Goalie Drill #3.',
+      createdAt: new Date().toISOString(),
+    },
+    {
+      id: 'insight-3',
+      type: 'strength',
+      title: 'Strength Highlight',
+      description: 'Clearing efficiency elite — top 10% among peers.',
+      createdAt: new Date().toISOString(),
+    },
+  ];
+}
+
