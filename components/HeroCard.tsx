@@ -62,7 +62,7 @@ const HeroCard: React.FC<HeroCardProps> = ({
 
   const handleAvatarClick = async () => {
     const result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      mediaTypes: ['images'] as any,
       allowsEditing: true,
       aspect: [1, 1],
       quality: 1,
