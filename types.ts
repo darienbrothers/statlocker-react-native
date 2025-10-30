@@ -2,6 +2,8 @@
 
 export type Tab = 'Dashboard' | 'Stats' | 'AI Coach' | 'Skills' | 'Goals';
 
+export type Position = 'Goalie' | 'Attack' | 'Midfield' | 'Defense' | 'FOGO';
+
 export type IconName = 
   'target' | 'shield' | 'goalsAgainst' | 'clear' | 'shotsFaced' | 
   'minutes' | 'turnovers' | 'fire' | 'home' | 'arrowRight' | 
@@ -30,6 +32,17 @@ export interface Game {
   groundBalls: number;
   turnovers: number;
   keyTakeaways: string;
+  teamContext?: 'High School' | 'Club';
+  quarterStats?: QuarterStats[];
+}
+
+export interface QuarterStats {
+  quarter: 1 | 2 | 3 | 4;
+  savePct?: number;
+  goals?: number;
+  groundBalls?: number;
+  turnovers?: number;
+  clearsMade?: number;
 }
 
 export interface GameLogFormData {
@@ -106,5 +119,49 @@ export interface Badge {
   title: string;
   description: string;
   isEarned: boolean;
+}
+
+export interface AIInsight {
+  id: string;
+  type: 'trend' | 'strength' | 'focus' | 'achievement';
+  title: string;
+  description: string;
+  metric?: string;
+  drillId?: string;
+  goalId?: string;
+  cta?: string;
+  createdAt: string;
+}
+
+export interface StatSummary {
+  metricId: string;
+  currentValue: number;
+  seasonAverage: number;
+  trend: number;
+  delta: number;
+}
+
+export interface ChartDataPoint extends Record<string, unknown> {
+  name: string;
+  value: number;
+  opponent?: string;
+  date?: string;
+}
+
+export interface TrendData {
+  metricId: string;
+  data: ChartDataPoint[];
+  trend: 'up' | 'down' | 'stable';
+  confidence: number;
+}
+
+export type TimeRange = 'Last 7 Days' | 'Last 30 Days' | 'Season';
+
+export interface StatsFilter {
+  timeRange?: TimeRange;
+  season?: string;
+  team?: 'High School' | 'Club';
+  opponent?: string;
+  location?: 'Home' | 'Away';
 }
 

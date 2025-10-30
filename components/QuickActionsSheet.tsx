@@ -7,6 +7,7 @@ interface QuickActionsSheetProps {
   isOpen: boolean;
   onClose: () => void;
   onLogGameClick: () => void;
+  onAskAiCoachClick?: () => void;
 }
 
 interface ActionItemProps {

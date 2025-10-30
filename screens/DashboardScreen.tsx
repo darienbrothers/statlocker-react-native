@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import type { PerformanceMetric, Goal, Game, UpcomingGame, Streak } from '../types';
+import type { PerformanceMetric, Goal, Game, UpcomingGame, Streak, GameLogFormData } from '../types';
 import MetricCard from '../components/MetricCard';
 import AiInsightCard from '../components/AiInsightCard';
 import RecentGamesList from '../components/RecentGamesList';
@@ -15,7 +15,7 @@ import DrawerMenu from '../components/DrawerMenu';
 import Fab from '../components/Fab';
 import QuickActionsSheet from '../components/QuickActionsSheet';
 import GameLogModal from '../components/GameLogModal';
-import type { GameLogFormData } from '../types';
+import GameDetailsScreen from './GameDetailsScreen';
 
 // --- High School Data ---
 const hsStreak: Streak = {
@@ -134,6 +134,7 @@ const DashboardScreen: React.FC<DashboardScreenProps> = ({ onGameSelect, onMenuC
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [isQuickActionsOpen, setQuickActionsOpen] = useState(false);
   const [isGameLogOpen, setGameLogOpen] = useState(false);
+  const [selectedGame, setSelectedGame] = useState<Game | null>(null);
   
   const handleAvatarChange = (newAvatar: string) => {
     setAvatarUrl(newAvatar);
@@ -164,6 +165,14 @@ const DashboardScreen: React.FC<DashboardScreenProps> = ({ onGameSelect, onMenuC
     console.log('Game data saved:', data);
     // TODO: Save to storage/backend
     setGameLogOpen(false);
+  };
+
+  const handleGameSelect = (game: Game) => {
+    setSelectedGame(game);
+  };
+
+  const handleCloseGameDetails = () => {
+    setSelectedGame(null);
   };
 
   const userName = "Erica Brothers";
@@ -234,7 +243,7 @@ const DashboardScreen: React.FC<DashboardScreenProps> = ({ onGameSelect, onMenuC
 
         <View style={styles.content}>
           <SectionHeader title="Recent Games" actionText="View All" onActionClick={() => {}} />
-          <RecentGamesList games={activeData.recentGames} onGameSelect={onGameSelect} />
+          <RecentGamesList games={activeData.recentGames} onGameSelect={handleGameSelect} />
         </View>
 
         <View style={styles.content}>
@@ -252,6 +261,10 @@ const DashboardScreen: React.FC<DashboardScreenProps> = ({ onGameSelect, onMenuC
         isOpen={isGameLogOpen}
         onClose={() => setGameLogOpen(false)}
         onSave={handleGameSave}
+      />
+      <GameDetailsScreen
+        game={selectedGame}
+        onClose={handleCloseGameDetails}
       />
     </View>
   );

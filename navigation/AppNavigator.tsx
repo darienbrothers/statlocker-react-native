@@ -7,6 +7,7 @@ import StatsScreen from '../screens/StatsScreen';
 import AiCoachScreen from '../screens/AiCoachScreen';
 import SkillsScreen from '../screens/SkillsScreen';
 import GoalsScreen from '../screens/GoalsScreen';
+import RecruitingScreen from '../screens/RecruitingScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -83,6 +84,19 @@ export default function AppNavigator() {
                 name="barbell-outline" 
                 size={size} 
                 color={color} 
+              />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="Recruiting"
+          component={RecruitingScreen}
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons
+                name="school-outline"
+                size={size}
+                color={color}
               />
             ),
           }}

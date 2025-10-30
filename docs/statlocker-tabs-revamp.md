@@ -738,6 +738,8 @@ Auto-calculated fields match formulas in the Stat Guide.
 
 * **Premium Lock (Pro plan):** “Unlock advanced charts and team comparisons.”
 
+
+
 # Skills Tab
 
 # **⭐ Skills Tab — “Master Your Craft. Earn Every Tier.”**
@@ -1298,6 +1300,7 @@ Below is the complete **revamped Goals Tab specification**, matching your existi
 
 ---
 
+
 # **🏆 Goals Tab — “Grind. Earn. Repeat.”**
 
 ## **🎯 Purpose**
@@ -1644,6 +1647,9 @@ XP display: progress bar at bottom of Goals screen.
 
 * **Coach Challenges** → team-wide milestones during season.
 
+
+
+
 # AI Coach Tab
 
 # **🧠 AI Coach Tab — “Your Personal Locker Room Mentor”**
@@ -1935,6 +1941,9 @@ Example system prompt (to Gemini/OpenAI):
 * **AI Challenges** → “Complete 3 drills I assign this week to earn a bonus badge.”
 
 * **Coach AI Companion** → Team dashboards with summarized player AI insights.
+
+
+
 
 # Messages Tab
 
@@ -2266,6 +2275,9 @@ All cards should deep-link into their home tab.
 * Auto-summaries (“AI: summarize last 200 messages”)
 
 * Coach approval workflows surfaced in-chat (“Approve wall ball submission”)
+
+
+
 
 # Profile Tab
 
@@ -2658,6 +2670,9 @@ Derived collections for display:
 * Public micro-landing with contact button (masked relay email)
 
 * Social share templates (image card with name \+ key stat \+ badge)
+
+
+
 
 # Game Details Screen
 
